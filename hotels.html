@@ -20,7 +20,51 @@
   </header>
 
   <main>
+    <form action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+        <label>
+          <input type="checkbox" name="infrastructure_swimming-pool">
+          Бассейн
+        </label>
+        <label>
+          <input type="checkbox" name="infrastructure_parking">
+          Парковка
+        </label>
+        <label>
+          <input type="checkbox" name="infrastructure_wifi">
+          Wi-Fi
+        </label>
+      </fieldset>
 
+      <fieldset>
+        <legend>Тип жилья:</legend>
+        <label>
+          <input type="checkbox" name="type_hotel">
+          Гостиница
+        </label>
+        <label>
+          <input type="checkbox" name="type_motel">
+          Мотель
+        </label>
+        <label>
+          <input type="checkbox" name="type_apartments">
+          Апартаменты
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Стоимость в сутки (Р):</legend>
+        <label>
+          <input type="number" name="cost_min" min="0" placeholder="От 0">
+        </label>
+        <label>
+          <input type="number" name="cost_max" max="3000" placeholder="До 3000">
+        </label>
+      </fieldset>
+
+      <input type="submit">
+    </form>
   </main>
 
   <footer>
