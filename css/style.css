@@ -18,6 +18,35 @@
 
 :root {
   --main-font: 'PT Sans', Arial, sans-serif;
+  --white: #FFFFFF;
+  --black: #000000;
+  --red: #FF0000;
+  --blue-1: #81B3D2;
+  --blue-2: #669EC0;
+  --blue-3: #5496BD;
+  --gray: #B3B3B3;
+  --brown-1: #766357;
+  --brown-2: #604E43;
+  --brown-3: #503E33;
+
+  --link-color: var(--black);
+  --link-hover: var(--blue-2);
+  --link-active: var(--gray);
+  --link-focus: var(--brown-1);
+
+  --sort-direction: #CACACA;
+
+  --button-blue: var(--blue-1);
+  --button-blue-hover: var(--blue-2);
+  --button-blue-active: var(--blue-3);
+
+  --button-brown: var(--brown-1);
+  --button-brown-hover: var(--brown-2);
+  --button-brown-active: var(--brown-3);
+
+  --academy-logo: #231F20;
+  --academy-logo-hover: var(--blue-1);
+  --academy-logo-active: #BDBBBC;
 }
 
 body {
