@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'),
+  url('../fonts/ptsans.woff2') format('woff2'),
+  url('../fonts/ptsans.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+  url('../fonts/ptsansbold.woff2') format('woff2'),
+  url('../fonts/ptsansbold.woff') format('wodff');
+}
+
+
+
+:root {
+  --main-font: 'PT Sans', Arial, sans-serif;
+  --white: #FFFFFF;
+  --black: #000000;
+  --red: #FF0000;
+  --blue-1: #81B3D2;
+  --blue-2: #669EC0;
+  --blue-3: #5496BD;
+  --gray-1: #B3B3B3;
+  --gray-2: #EEEEEE;
+  --gray-3: #333333;
+  --brown-1: #766357;
+  --brown-2: #604E43;
+  --brown-3: #503E33;
+
+  --link: var(--black);
+  --link-hover: var(--blue-1);
+  --link-active: var(--gray-1);
+  --link-focus: var(--brown-1);
+
+  --sort-direction: #CACACA;
+
+  --button-blue: var(--blue-1);
+  --button-blue-hover: var(--blue-2);
+  --button-blue-active: var(--blue-3);
+
+  --button-brown: var(--brown-1);
+  --button-brown-hover: var(--brown-2);
+  --button-brown-active: var(--brown-3);
+
+  --academy-logo: #231F20;
+  --academy-logo-hover: var(--blue-1);
+  --academy-logo-active: #BDBBBC;
+}
+
+
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+a:focus {
+  color: var(--link-focus);
+}
+
+a:active {
+  color: var(--link-active);
+}
+
+
+
+/* Common */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+
+
+/* Main navigation */
+
+.main-navigation {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--black);
+}
+
+.main-navigation__list {
+  list-style: none;
+}
+
+
+
+/* Benefits */
+
+.benefits__unappreciated {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  max-width: 470px;
+  margin: auto;
+}
+
+.benefits__five-advantages {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.benefits__benefit-block {
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.benefits__benefit-block-header {
+  font-size: 21px;
+  line-height: 21px;
+  max-width: 149px;
+  margin: auto;
+}
+
+.benefits__benefit-block-text {
+  max-width: 285px;
+  margin: auto;
+}
+
+.benefits__benefit-block-blue {
+  background-color: var(--blue-1);
+  color: var(--white);
+}
+
+.benefits__benefit-block-blue-text {
+  max-width: 305px;
+  margin: auto;
+}
+
+.benefits__benefit-block-gray {
+  background-color: var(--gray-2);
+  color: var(--gray-3);
+}
+
+.benefits__benefit-block-gray-header {
+  color: var(--black);
+}
+
+.benefits__benefit-block-gray-text {
+  max-width: 258px;
+  margin: auto;
+}
+
+
+/* Search */
+
+.search__header {
+  font-size: 30px;
+  text-align: center;
+}
+
+.search__text {
+  text-align: center;
+}
+
+.search__button {
+  background-color: var(--button-brown);
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.search__button:hover {
+  background-color: var(--button-brown-hover);
+}
+
+.search__button:active {
+  background-color: var(--button-brown-active);
+  color: var(--link-active);
+}
+
+
+/* Footer */
+
+.contacts {
+  font-weight: 700;
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.social__link {
+  background-color: var(--button-blue);
+  color: var(--white);
+}
+
+.social__link:hover {
+  background-color: var(--button-blue-hover);
+  color: var(--white);
+}
+
+.social__link:active {
+  background-color: var(--button-blue-active);
+  color: var(--link-active);
+}
