@@ -68,6 +68,19 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--black);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+a:focus {
+  color: var(--link-focus);
+}
+
+a:active {
+  color: var(--link-active);
 }
 
 
@@ -96,22 +109,6 @@ a {
 
 .main-navigation__list {
   list-style: none;
-}
-
-.main-navigation__item a {
-  color: var(--black);
-}
-
-.main-navigation__item a:hover {
-  color: var(--link-hover);
-}
-
-.main-navigation__item a:focus {
-  color: var(--link-focus);
-}
-
-.main-navigation__item a:active {
-  color: var(--link-active);
 }
 
 
@@ -154,4 +151,51 @@ a {
 
 .benefits__benefit-block-gray-header {
   color: var(--black);
+}
+
+
+
+/* Search */
+
+.search__header {
+  font-size: 30px;
+  text-align: center;
+}
+
+.search__text {
+  text-align: center;
+}
+
+.search__button {
+  background-color: var(--brown-1);
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+
+/* Footer */
+
+.contacts {
+  font-weight: 700;
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.social__item a {
+  background-color: var(--button-blue);
+  color: var(--white);
+}
+
+.social__item a:hover {
+  background-color: var(--button-blue-hover);
+  color: var(--white);
+}
+
+.social__item a:active {
+  background-color: var(--button-brown-active);
+  color: var(--link-active);
 }
