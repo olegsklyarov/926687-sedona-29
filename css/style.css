@@ -16,6 +16,8 @@
   url('../fonts/ptsansbold.woff') format('wodff');
 }
 
+
+
 :root {
   --main-font: 'PT Sans', Arial, sans-serif;
   --white: #FFFFFF;
@@ -24,14 +26,16 @@
   --blue-1: #81B3D2;
   --blue-2: #669EC0;
   --blue-3: #5496BD;
-  --gray: #B3B3B3;
+  --gray-1: #B3B3B3;
+  --gray-2: #EEEEEE;
+  --gray-3: #333333;
   --brown-1: #766357;
   --brown-2: #604E43;
   --brown-3: #503E33;
 
-  --link-color: var(--black);
-  --link-hover: var(--blue-2);
-  --link-active: var(--gray);
+  --link: var(--black);
+  --link-hover: var(--blue-1);
+  --link-active: var(--gray-1);
   --link-focus: var(--brown-1);
 
   --sort-direction: #CACACA;
@@ -49,7 +53,105 @@
   --academy-logo-active: #BDBBBC;
 }
 
+
+
 body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
   font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
+a {
+  text-decoration: none;
+}
+
+
+
+/* Common */
+
+.visually-hidden {
+  display: none;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+
+
+/* Main navigation */
+
+.main-navigation {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--black);
+}
+
+.main-navigation__list {
+  list-style: none;
+}
+
+.main-navigation__item a {
+  color: var(--black);
+}
+
+.main-navigation__item a:hover {
+  color: var(--link-hover);
+}
+
+.main-navigation__item a:focus {
+  color: var(--link-focus);
+}
+
+.main-navigation__item a:active {
+  color: var(--link-active);
+}
+
+
+
+/* Benefits */
+
+.benefits__unappreciated {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.benefits__five-advantages {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.benefits__benefit-block {
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.benefits__benefit-block-header {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.benefits__benefit-block-blue {
+  background-color: var(--blue-1);
+  color: var(--white);
+}
+
+.benefits__benefit-block-gray {
+  background-color: var(--gray-2);
+  color: var(--gray-3);
+}
+
+.benefits__benefit-block-gray-header {
+  color: var(--black);
+}

@@ -8,76 +8,76 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="main-navigation">
         <a>
           <img src="https://via.placeholder.com/138x70" width="138" height="70" alt="Логотип города Седона">
         </a>
-        <ul>
-          <li><a href="">Информация</a></li>
-          <li><a href="">Фото и видео</a></li>
-          <li><a href="">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item"><a href="">Информация</a></li>
+          <li class="main-navigation__item"><a href="">Фото и видео</a></li>
+          <li class="main-navigation__item"><a href="">Карта штата</a></li>
+          <li class="main-navigation__item"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <h2>Добро пожаловать в Седону</h2>
+    <main class="container">
+      <section class="brand">
+        <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
         <img src="https://via.placeholder.com/187x44" width="187" height="44" alt="Welcome">
         <img src="https://via.placeholder.com/255x28" width="255" height="28" alt="To the gorgeous">
         <img src="https://via.placeholder.com/456x213" width="456" height="213" alt="Sedona and slogan">
       </section>
-      <section>
+      <section class="benefits">
         <div>
-          <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <p class="benefits__unappreciated">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</p>
+          <p class="benefits__five-advantages">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
         <div>
-          <div>
-            <h3>Настоящий городок</h3>
+          <div class="benefits__benefit-block benefits__benefit-block-blue">
+            <h3 class="benefits__benefit-block-header">Настоящий городок</h3>
             <p>— №1 —</p>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <p>Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
           </div>
           <img src="https://via.placeholder.com/800x256" width="800" height="256" alt="Вид на местное здание">
         </div>
-        <ul>
-          <li>
+        <ul class="list-style-none">
+          <li class="benefits__benefit-block">
             <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
           </li>
-          <li>
+          <li class="benefits__benefit-block">
             <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
           </li>
-          <li>
+          <li class="benefits__benefit-block">
             <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
+            <p>Не только китайского, но и местного<br>производства!</p>
           </li>
         </ul>
         <div>
           <img src="https://via.placeholder.com/800x256" width="800" height="256" alt="Мост Дьявола">
-          <div>
-            <h3>Там есть Мост дьявола</h3>
+          <div class="benefits__benefit-block benefits__benefit-block-blue">
+            <h3 class="benefits__benefit-block-header">Там есть<br>Мост дьявола</h3>
             <p>— №2 —</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
           </div>
         </div>
-        <ul>
-          <li>
-            <h3>Небольшая площадь</h3>
+        <ul class="list-style-none">
+          <li class="benefits__benefit-block benefits__benefit-block-gray">
+            <h3 class="benefits__benefit-block-header benefits__benefit-block-gray-header">Небольшая площадь</h3>
             <p>— №3 —</p>
-            <p>Все достопримечательности находятся очень близко</p>
+            <p>Все достопримечательности<br>находятся очень близко</p>
           </li>
-          <li>
-            <h3>Красивая дорога</h3>
+          <li class="benefits__benefit-block benefits__benefit-block-gray">
+            <h3 class="benefits__benefit-block-header benefits__benefit-block-gray-header">Красивая дорога</h3>
             <p>— №4 —</p>
-            <p>Eхать в седону из лас-вегаса совсем не скучно!</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
           </li>
-          <li>
-            <h3>Мало туристов</h3>
+          <li class="benefits__benefit-block benefits__benefit-block-gray">
+            <h3 class="benefits__benefit-block-header benefits__benefit-block-gray-header">Мало туристов</h3>
             <p>— №5 —</p>
-            <p>Большинство едет в гранд каньон и толпится там</p>
+            <p>Большинство едет в Гранд Каньон<br>и толпится там</p>
           </li>
         </ul>
       </section>
@@ -89,6 +89,7 @@
         <img src="https://via.placeholder.com/1200x473" width="1200" height="473" alt="Карта Седоны">
       </section>
     </main>
+
     <footer>
       <div>
         <p>#VISITSEDONA</p>
