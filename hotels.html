@@ -22,7 +22,7 @@
   </header>
 
   <main>
-    <form action="https://echo.htmlacademy.ru">
+    <form class="search-form" action="https://echo.htmlacademy.ru">
       <fieldset>
         <legend>Инфраструктура:</legend>
         <label>
@@ -58,14 +58,14 @@
       <fieldset>
         <legend>Стоимость в сутки (Р):</legend>
         <label>
-          <input type="number" name="cost_min" min="0" placeholder="От 0">
+          <input class="search-form__cost-min" type="number" name="cost_min" min="0" placeholder="От 0">
         </label>
         <label>
-          <input type="number" name="cost_max" max="3000" placeholder="До 3000">
+          <input class="search-form__cost-max" type="number" name="cost_max" max="3000" placeholder="До 3000">
         </label>
       </fieldset>
 
-      <input type="submit">
+      <button class="search-form__submit" type="submit">Показать</button>
     </form>
 
     <section>

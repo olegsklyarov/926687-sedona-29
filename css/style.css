@@ -51,6 +51,8 @@
   --academy-logo: #231F20;
   --academy-logo-hover: var(--blue-1);
   --academy-logo-active: #BDBBBC;
+
+  --search-form-background-average: #526171;
 }
 
 
@@ -229,4 +231,37 @@ a:active {
 .social__link:active {
   background-color: var(--button-blue-active);
   color: var(--link-active);
+}
+
+
+/* Search form */
+
+.search-form {
+  background-color: var(--search-form-background-average);
+  color: var(--white);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.search-form fieldset {
+  border: 0;
+}
+
+.search-form legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.search-form__cost-min::placeholder,
+.search-form__cost-max::placeholder {
+  text-transform: uppercase;
+  background-color: var(--search-form-background-average);
+  color: var(--white);
+}
+
+.search-form__submit {
+  text-transform: uppercase;
+  background-color: var(--search-form-background-average);
+  color: var(--white);
 }
