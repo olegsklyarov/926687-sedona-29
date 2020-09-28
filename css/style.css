@@ -88,7 +88,11 @@ a:active {
 /* Common */
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .list-style-none {
@@ -185,12 +189,21 @@ a:active {
 }
 
 .search__button {
-  background-color: var(--brown-1);
+  background-color: var(--button-brown);
   color: var(--white);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+}
+
+.search__button:hover {
+  background-color: var(--button-brown-hover);
+}
+
+.search__button:active {
+  background-color: var(--button-brown-active);
+  color: var(--link-active);
 }
 
 
@@ -203,17 +216,17 @@ a:active {
   line-height: 26px;
 }
 
-.social__item a {
+.social__link {
   background-color: var(--button-blue);
   color: var(--white);
 }
 
-.social__item a:hover {
+.social__link:hover {
   background-color: var(--button-blue-hover);
   color: var(--white);
 }
 
-.social__item a:active {
-  background-color: var(--button-brown-active);
+.social__link:active {
+  background-color: var(--button-blue-active);
   color: var(--link-active);
 }
