@@ -40,13 +40,17 @@
 
   --sort-direction: #CACACA;
 
-  --button-blue: var(--blue-1);
-  --button-blue-hover: var(--blue-2);
-  --button-blue-active: var(--blue-3);
+  --button-blue-color: var(--white);
+  --button-blue-color-active: var(--gray-1);
+  --button-blue-background-color: var(--blue-1);
+  --button-blue-background-color-hover: var(--blue-2);
+  --button-blue-background-color-active: var(--blue-3);
 
-  --button-brown: var(--brown-1);
-  --button-brown-hover: var(--brown-2);
-  --button-brown-active: var(--brown-3);
+  --button-brown-color: var(--white);
+  --button-brown-color-active: var(--gray-1);
+  --button-brown-background-color: var(--brown-1);
+  --button-brown-background-color-hover: var(--brown-2);
+  --button-brown-background-color-active: var(--brown-3);
 
   --academy-logo: #231F20;
   --academy-logo-hover: var(--blue-1);
@@ -99,6 +103,40 @@ a:active {
 
 .list-style-none {
   list-style: none;
+}
+
+.button-common {
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
+
+.button-blue {
+  color: var(--button-blue-color);
+  background-color: var(--button-blue-background-color);
+}
+
+.button-blue:hover {
+  background-color: var(--button-blue-background-color-hover);
+}
+
+.button-blue:active {
+  color: var(--button-blue-color-active);
+  background-color: var(--button-blue-background-color-active);
+}
+
+.button-brown {
+  color: var(--button-brown-color);
+  background-color: var(--button-brown-background-color);
+}
+
+.button-brown:hover {
+  background-color: var(--button-brown-background-color-hover);
+}
+
+.button-brown:active {
+  color: var(--button-brown-color-active);
+  background-color: var(--button-brown-background-color-active);
 }
 
 
@@ -191,21 +229,10 @@ a:active {
 }
 
 .search__button {
-  background-color: var(--button-brown);
-  color: var(--white);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-}
-
-.search__button:hover {
-  background-color: var(--button-brown-hover);
-}
-
-.search__button:active {
-  background-color: var(--button-brown-active);
-  color: var(--link-active);
 }
 
 
@@ -219,17 +246,17 @@ a:active {
 }
 
 .social__link {
-  background-color: var(--button-blue);
+  background-color: var(--button-blue-background-color);
   color: var(--white);
 }
 
 .social__link:hover {
-  background-color: var(--button-blue-hover);
+  background-color: var(--button-blue-background-color-hover);
   color: var(--white);
 }
 
 .social__link:active {
-  background-color: var(--button-blue-active);
+  background-color: var(--button-blue-background-color-active);
   color: var(--link-active);
 }
 
@@ -261,10 +288,19 @@ a:active {
   color: var(--white);
 }
 
-.search-form__submit {
+.search-form__button-submit {
+  outline: none;
   text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
   background-color: var(--search-form-background-average);
   color: var(--white);
+  border: 2px solid #FFFFFF;
+}
+
+.search-form__button-submit:hover {
+  background-color: var(--white);
+  color: var(--black);
 }
 
 
@@ -309,4 +345,9 @@ a:active {
 .search-result__sort-type-button__selected {
   border-bottom: 1px dotted var(--white);
   color: var(--blue-1);
+}
+
+.search-result__item-button {
+  font-size: 14px;
+  line-height: 21px;
 }
