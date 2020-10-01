@@ -40,17 +40,23 @@
 
   --sort-direction: #CACACA;
 
-  --button-blue: var(--blue-1);
-  --button-blue-hover: var(--blue-2);
-  --button-blue-active: var(--blue-3);
+  --button-blue-color: var(--white);
+  --button-blue-color-active: var(--gray-1);
+  --button-blue-background-color: var(--blue-1);
+  --button-blue-background-color-hover: var(--blue-2);
+  --button-blue-background-color-active: var(--blue-3);
 
-  --button-brown: var(--brown-1);
-  --button-brown-hover: var(--brown-2);
-  --button-brown-active: var(--brown-3);
+  --button-brown-color: var(--white);
+  --button-brown-color-active: var(--gray-1);
+  --button-brown-background-color: var(--brown-1);
+  --button-brown-background-color-hover: var(--brown-2);
+  --button-brown-background-color-active: var(--brown-3);
 
   --academy-logo: #231F20;
   --academy-logo-hover: var(--blue-1);
   --academy-logo-active: #BDBBBC;
+
+  --search-form-background-average: #526171;
 }
 
 
@@ -97,6 +103,40 @@ a:active {
 
 .list-style-none {
   list-style: none;
+}
+
+.button-common {
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
+
+.button-blue {
+  color: var(--button-blue-color);
+  background-color: var(--button-blue-background-color);
+}
+
+.button-blue:hover {
+  background-color: var(--button-blue-background-color-hover);
+}
+
+.button-blue:active {
+  color: var(--button-blue-color-active);
+  background-color: var(--button-blue-background-color-active);
+}
+
+.button-brown {
+  color: var(--button-brown-color);
+  background-color: var(--button-brown-background-color);
+}
+
+.button-brown:hover {
+  background-color: var(--button-brown-background-color-hover);
+}
+
+.button-brown:active {
+  color: var(--button-brown-color-active);
+  background-color: var(--button-brown-background-color-active);
 }
 
 
@@ -189,21 +229,10 @@ a:active {
 }
 
 .search__button {
-  background-color: var(--button-brown);
-  color: var(--white);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-}
-
-.search__button:hover {
-  background-color: var(--button-brown-hover);
-}
-
-.search__button:active {
-  background-color: var(--button-brown-active);
-  color: var(--link-active);
 }
 
 
@@ -217,16 +246,108 @@ a:active {
 }
 
 .social__link {
-  background-color: var(--button-blue);
+  background-color: var(--button-blue-background-color);
   color: var(--white);
 }
 
 .social__link:hover {
-  background-color: var(--button-blue-hover);
+  background-color: var(--button-blue-background-color-hover);
   color: var(--white);
 }
 
 .social__link:active {
-  background-color: var(--button-blue-active);
+  background-color: var(--button-blue-background-color-active);
   color: var(--link-active);
+}
+
+
+
+/* Search form */
+
+.search-form {
+  background-color: var(--search-form-background-average);
+  color: var(--white);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.search-form fieldset {
+  border: 0;
+}
+
+.search-form legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.search-form__cost-min::placeholder,
+.search-form__cost-max::placeholder {
+  text-transform: uppercase;
+  background-color: var(--search-form-background-average);
+  color: var(--white);
+}
+
+.search-form__button-submit {
+  outline: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--search-form-background-average);
+  color: var(--white);
+  border: 2px solid #FFFFFF;
+}
+
+.search-form__button-submit:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+
+
+/* Search result */
+
+.search-result__header {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.search-result__sort {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.search-result__sort-type-button {
+  border: none;
+  background-color: var(--white);
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-bottom: 1px dotted var(--blue-1);
+  padding: 0;
+  color: var(--gray-1);
+}
+
+.search-result__sort-type-button:hover {
+  color: var(--blue-1);
+}
+
+.search-result__sort-type-button:active {
+  border-bottom: 1px dotted var(--white);
+  color: var(--black);
+}
+
+.search-result__sort-type-button:focus {
+  outline: none;
+}
+
+.search-result__sort-type-button__selected {
+  border-bottom: 1px dotted var(--white);
+  color: var(--blue-1);
+}
+
+.search-result__item-button {
+  font-size: 14px;
+  line-height: 21px;
 }

@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Гостиницы в Седоне</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="main-navigation">
       <a href="index.html">
         <img src="https://via.placeholder.com/138x70" width="138" height="70" alt="Логотип города Седона">
       </a>
-      <ul>
+      <ul class="main-navigation__list">
         <li><a href="">Информация</a></li>
         <li><a href="">Фото и видео</a></li>
         <li><a href="">Карта штата</a></li>
@@ -20,7 +22,7 @@
   </header>
 
   <main>
-    <form action="https://echo.htmlacademy.ru">
+    <form class="search-form" action="https://echo.htmlacademy.ru">
       <fieldset>
         <legend>Инфраструктура:</legend>
         <label>
@@ -56,36 +58,46 @@
       <fieldset>
         <legend>Стоимость в сутки (Р):</legend>
         <label>
-          <input type="number" name="cost_min" min="0" placeholder="От 0">
+          <input class="search-form__cost-min" type="number" name="cost_min" min="0" placeholder="От 0">
         </label>
         <label>
-          <input type="number" name="cost_max" max="3000" placeholder="До 3000">
+          <input class="search-form__cost-max" type="number" name="cost_max" max="3000" placeholder="До 3000">
         </label>
       </fieldset>
 
-      <input type="submit">
+      <button class="search-form__button-submit" type="submit">Показать</button>
     </form>
 
     <section>
-      <h2>Найдено: 3</h2>
-      <p>Сортировка:</p>
-      <ul>
-        <li><button type="button">По цене</button></li>
-        <li><button type="button">По типу</button></li>
-        <li><button type="button">По рейтингу</button></li>
+      <h2 class="search-result__header">Найдено: 3</h2>
+      <p class="search-result__sort">Сортировка:</p>
+      <ul class="search-result__sort list-style-none">
+        <li>
+          <button class="search-result__sort-type-button search-result__sort-type-button__selected" type="button">По цене</button>
+        </li>
+        <li>
+          <button class="search-result__sort-type-button" type="button">По типу</button>
+        </li>
+        <li>
+          <button class="search-result__sort-type-button" type="button">По рейтингу</button>
+        </li>
       </ul>
-      <ul>
-        <li><button type="button">По возрастанию</button></li>
-        <li><button type="button">По убыванию</button></li>
+      <ul class="list-style-none">
+        <li>
+          <button type="button">По возрастанию</button>
+        </li>
+        <li>
+          <button type="button">По убыванию</button>
+        </li>
       </ul>
 
       <div>
         <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Вид на Amara Resort & Spa">
-        <h3>Amara Resort & Spa</h3>
+        <h3 class="search-result__header">Amara Resort & Spa</h3>
         <p>Гостиница</p>
         <p>От 4000 Р.</p>
-        <button type="button">Подробнее</button>
-        <button type="button">Забронировать</button>
+        <button class="search-result__item-button button-common button-blue" type="button">Подробнее</button>
+        <button class="search-result__item-button button-common button-brown" type="button">Забронировать</button>
         <ul>
           <li>Звезда</li>
           <li>Звезда</li>
@@ -97,11 +109,11 @@
 
       <div>
         <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Вид на Desert Quail Inn">
-        <h3>Desert Quail Inn</h3>
+        <h3 class="search-result__header">Desert Quail Inn</h3>
         <p>Мотель</p>
         <p>От 3000 Р.</p>
-        <button type="button">Подробнее</button>
-        <button type="button">Забронировать</button>
+        <button class="search-result__item-button button-common button-blue" type="button">Подробнее</button>
+        <button class="search-result__item-button button-common button-brown" type="button">Забронировать</button>
         <ul>
           <li>Звезда</li>
           <li>Звезда</li>
@@ -112,11 +124,11 @@
 
       <div>
         <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Вид на Villas at Poco Diablo">
-        <h3>Villas at Poco Diablo</h3>
+        <h3 class="search-result__header">Villas at Poco Diablo</h3>
         <p>Апартаменты</p>
         <p>От 2000 Р.</p>
-        <button type="button">Подробнее</button>
-        <button type="button">Забронировать</button>
+        <button class="search-result__item-button button-common button-blue" type="button">Подробнее</button>
+        <button class="search-result__item-button button-common button-brown" type="button">Забронировать</button>
         <ul>
           <li>Звезда</li>
           <li>Звезда</li>
@@ -129,19 +141,19 @@
   </main>
 
   <footer>
-    <div>
+    <div class="contacts">
       <p>#VISITSEDONA</p>
       Тел: <a href="tel:+74956660166">+7(495) 666-01-66</a>
     </div>
-    <ul>
+    <ul class="list-style-none">
       <li>
-        <a href="">Twitter</a>
+        <a class="social__link" href="">Twitter</a>
       </li>
       <li>
-        <a href="">Facebook</a>
+        <a class="social__link" href="">Facebook</a>
       </li>
       <li>
-        <a href="">Youtube</a>
+        <a class="social__link" href="">Youtube</a>
       </li>
     </ul>
     <div>
