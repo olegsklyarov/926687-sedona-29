@@ -57,6 +57,7 @@
   --academy-logo-active: #BDBBBC;
 
   --search-form-background-average: #526171;
+  --brand-background-average: #768591;
 }
 
 
@@ -157,6 +158,17 @@ a:active {
 
 
 
+/* Brand */
+
+.brand {
+  background-image: url("../img/brand-background.jpg");
+  background-color: var(--brand-background-average);
+  width: 1200px;
+  height: 509px;
+}
+
+
+
 /* Benefits */
 
 .benefits__unappreciated {
@@ -216,6 +228,9 @@ a:active {
   margin: auto;
 }
 
+.benefits__icon {
+  fill: var(--blue-1);
+}
 
 /* Search */
 
