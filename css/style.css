@@ -45,6 +45,7 @@
   --button-blue-background-color: var(--blue-1);
   --button-blue-background-color-hover: var(--blue-2);
   --button-blue-background-color-active: var(--blue-3);
+  --button-blue-social-color-active: #87B5D1;
 
   --button-brown-color: var(--white);
   --button-brown-color-active: var(--gray-1);
@@ -58,6 +59,10 @@
 
   --search-form-background-average: #526171;
   --brand-background-average: #768591;
+
+  --logo-academy: #231F20;
+  --logo-academy-hover: var(--blue-1);
+  --logo-academy-active: #BDBBBC;
 }
 
 
@@ -260,21 +265,34 @@ a:active {
   line-height: 26px;
 }
 
-.social__link {
-  background-color: var(--button-blue-background-color);
-  color: var(--white);
+.social__button {
+  width: 46px;
+  height: 48px;
+  background-color: var(--blue-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.social__link:hover {
-  background-color: var(--button-blue-background-color-hover);
-  color: var(--white);
+.social__icon {
+  fill: var(--white);
 }
 
-.social__link:active {
-  background-color: var(--button-blue-background-color-active);
-  color: var(--link-active);
+.social__icon:active {
+  fill: var(--button-blue-social-color-active);
 }
 
+.logo-academy {
+  fill: var(--logo-academy);
+}
+
+.logo-academy:hover {
+  fill: var(--logo-academy-hover);
+}
+
+.logo-academy:active {
+  fill: var(--logo-academy-active);
+}
 
 
 /* Search form */
