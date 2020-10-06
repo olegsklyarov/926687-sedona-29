@@ -68,6 +68,8 @@
   --button-sort: var(--gray-4);
   --button-sort-hover: var(--black);
   --button-sort-active: var(--blue-1);
+
+  --hotel-star: var(--blue-1);
 }
 
 
@@ -408,4 +410,8 @@ a:active {
 
 .search-result__sort-order-active {
   fill: var(--button-sort-active);
+}
+
+.search-result__hotel-star {
+  fill: var(--hotel-star);
 }
