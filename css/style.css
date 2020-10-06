@@ -29,6 +29,7 @@
   --gray-1: #B3B3B3;
   --gray-2: #EEEEEE;
   --gray-3: #333333;
+  --gray-4: #CACACA;
   --brown-1: #766357;
   --brown-2: #604E43;
   --brown-3: #503E33;
@@ -63,6 +64,10 @@
   --logo-academy: #231F20;
   --logo-academy-hover: var(--blue-1);
   --logo-academy-active: #BDBBBC;
+
+  --button-sort: var(--gray-4);
+  --button-sort-hover: var(--black);
+  --button-sort-active: var(--blue-1);
 }
 
 
@@ -115,6 +120,7 @@ a:active {
   text-transform: uppercase;
   border: none;
   outline: none;
+  background-color: var(--white);
 }
 
 .button-blue {
@@ -386,4 +392,20 @@ a:active {
 .search-result__item-button {
   font-size: 14px;
   line-height: 21px;
+}
+
+.search-result__sort-order {
+  fill: var(--button-sort);
+}
+
+.search-result__sort-order:hover {
+  fill: var(--button-sort-hover);
+}
+
+.search-result__sort-order:active {
+  fill: var(--button-sort-active);
+}
+
+.search-result__sort-order-active {
+  fill: var(--button-sort-active);
 }
