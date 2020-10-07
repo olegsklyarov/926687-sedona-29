@@ -286,7 +286,7 @@ a:active {
   fill: var(--white);
 }
 
-.social__icon:active {
+.social__button:active .social__icon {
   fill: var(--button-blue-social-color-active);
 }
 
