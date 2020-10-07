@@ -325,10 +325,14 @@ a:active {
   font-weight: 700;
 }
 
+.search-form__cost-min,
+.search-form__cost-max {
+  background: transparent;
+}
+
 .search-form__cost-min::placeholder,
 .search-form__cost-max::placeholder {
   text-transform: uppercase;
-  background-color: var(--search-form-background-average);
   color: var(--white);
 }
 
@@ -337,7 +341,7 @@ a:active {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
-  background-color: var(--search-form-background-average);
+  background: transparent;
   color: var(--white);
   border: 2px solid #FFFFFF;
 }
