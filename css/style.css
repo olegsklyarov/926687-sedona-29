@@ -123,14 +123,6 @@ a:active {
 
 /* Common */
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
 .list-style-none {
   list-style: none;
 }
@@ -214,6 +206,9 @@ a:active {
   background-color: var(--brand-background-average);
   width: 1200px;
   height: 509px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
