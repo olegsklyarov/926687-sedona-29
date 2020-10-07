@@ -10,7 +10,7 @@
   <header>
     <nav class="main-navigation">
       <a href="index.html">
-        <img src="https://via.placeholder.com/138x70" width="138" height="70" alt="Логотип города Седона">
+        <img src="img/navigation-logo.svg" width="138" height="70" alt="Логотип города Седона">
       </a>
       <ul class="main-navigation__list">
         <li><a href="">Информация</a></li>
@@ -84,54 +84,98 @@
       </ul>
       <ul class="list-style-none">
         <li>
-          <button type="button">По возрастанию</button>
+          <button class="button-common" type="button">
+            <svg class="search-result__sort-order" width="11" height="10">
+              <use xlink:href="img/icons.svg#sort-asc"></use>
+            </svg>
+          </button>
         </li>
         <li>
-          <button type="button">По убыванию</button>
+          <button class="button-common" type="button">
+            <svg class="search-result__sort-order search-result__sort-order-active" width="11" height="10">
+              <use xlink:href="img/icons.svg#sort-desc"></use>
+            </svg>
+          </button>
         </li>
       </ul>
 
       <div>
-        <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Вид на Amara Resort & Spa">
+        <img src="img/search-result-amara.jpg" width="135" height="90" alt="Вид на Amara Resort & Spa">
         <h3 class="search-result__header">Amara Resort & Spa</h3>
         <p>Гостиница</p>
         <p>От 4000 Р.</p>
         <button class="search-result__item-button button-common button-blue" type="button">Подробнее</button>
         <button class="search-result__item-button button-common button-brown" type="button">Забронировать</button>
-        <ul>
-          <li>Звезда</li>
-          <li>Звезда</li>
-          <li>Звезда</li>
-          <li>Звезда</li>
+        <ul class="list-style-none">
+          <li>
+            <svg class="search-result__hotel-star" width="19" height="17">
+              <use xlink:href="img/icons.svg#star"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="search-result__hotel-star" width="19" height="17">
+              <use xlink:href="img/icons.svg#star"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="search-result__hotel-star" width="19" height="17">
+              <use xlink:href="img/icons.svg#star"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="search-result__hotel-star" width="19" height="17">
+              <use xlink:href="img/icons.svg#star"></use>
+            </svg>
+          </li>
         </ul>
         <p>Рейтинг: 8,5</p>
       </div>
 
       <div>
-        <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Вид на Desert Quail Inn">
+        <img src="img/search-result-desert.jpg" width="135" height="90" alt="Вид на Desert Quail Inn">
         <h3 class="search-result__header">Desert Quail Inn</h3>
         <p>Мотель</p>
         <p>От 3000 Р.</p>
         <button class="search-result__item-button button-common button-blue" type="button">Подробнее</button>
         <button class="search-result__item-button button-common button-brown" type="button">Забронировать</button>
-        <ul>
-          <li>Звезда</li>
-          <li>Звезда</li>
-          <li>Звезда</li>
+        <ul class="list-style-none">
+          <li>
+            <svg class="search-result__hotel-star" width="19" height="17">
+              <use xlink:href="img/icons.svg#star"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="search-result__hotel-star" width="19" height="17">
+              <use xlink:href="img/icons.svg#star"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="search-result__hotel-star" width="19" height="17">
+              <use xlink:href="img/icons.svg#star"></use>
+            </svg>
+          </li>
         </ul>
         <p>Рейтинг: 8,9</p>
       </div>
 
       <div>
-        <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Вид на Villas at Poco Diablo">
+        <img src="img/search-result-villas.jpg" width="135" height="90" alt="Вид на Villas at Poco Diablo">
         <h3 class="search-result__header">Villas at Poco Diablo</h3>
         <p>Апартаменты</p>
         <p>От 2000 Р.</p>
         <button class="search-result__item-button button-common button-blue" type="button">Подробнее</button>
         <button class="search-result__item-button button-common button-brown" type="button">Забронировать</button>
-        <ul>
-          <li>Звезда</li>
-          <li>Звезда</li>
+        <ul class="list-style-none">
+          <li>
+            <svg class="search-result__hotel-star" width="19" height="17">
+              <use xlink:href="img/icons.svg#star"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="search-result__hotel-star" width="19" height="17">
+              <use xlink:href="img/icons.svg#star"></use>
+            </svg>
+          </li>
         </ul>
         <p>Рейтинг: 9,2</p>
       </div>
@@ -147,19 +191,33 @@
     </div>
     <ul class="list-style-none">
       <li>
-        <a class="social__link" href="">Twitter</a>
+        <a class="social__button button-blue" href="" title="Наш аккаунт Twitter">
+          <svg class="social__icon" width="17" height="17">
+            <use xlink:href="img/icons.svg#social-twitter"></use>
+          </svg>
+        </a>
       </li>
       <li>
-        <a class="social__link" href="">Facebook</a>
+        <a class="social__button button-blue" href="" title="Наш аккаунт Facebook">
+          <svg class="social__icon" width="12" height="22">
+            <use xlink:href="img/icons.svg#social-facebook"></use>
+          </svg>
+        </a>
       </li>
       <li>
-        <a class="social__link" href="">Youtube</a>
+        <a class="social__button button-blue" href="" title="Наш аккаунт в YouTube">
+          <svg class="social__icon" width="20" height="16">
+            <use xlink:href="img/icons.svg#social-youtube"></use>
+          </svg>
+        </a>
       </li>
     </ul>
     <div>
       Website by
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="https://via.placeholder.com/115x41" width="115" height="41" alt="Логотип Академии">
+        <svg class="logo-academy" width="115" height="41">
+          <use xlink:href="img/icons.svg#htmlacademy"></use>
+        </svg>
       </a>
     </div>
   </footer>

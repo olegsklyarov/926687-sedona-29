@@ -29,6 +29,7 @@
   --gray-1: #B3B3B3;
   --gray-2: #EEEEEE;
   --gray-3: #333333;
+  --gray-4: #CACACA;
   --brown-1: #766357;
   --brown-2: #604E43;
   --brown-3: #503E33;
@@ -45,6 +46,7 @@
   --button-blue-background-color: var(--blue-1);
   --button-blue-background-color-hover: var(--blue-2);
   --button-blue-background-color-active: var(--blue-3);
+  --button-blue-social-color-active: #87B5D1;
 
   --button-brown-color: var(--white);
   --button-brown-color-active: var(--gray-1);
@@ -57,6 +59,17 @@
   --academy-logo-active: #BDBBBC;
 
   --search-form-background-average: #526171;
+  --brand-background-average: #768591;
+
+  --logo-academy: #231F20;
+  --logo-academy-hover: var(--blue-1);
+  --logo-academy-active: #BDBBBC;
+
+  --button-sort: var(--gray-4);
+  --button-sort-hover: var(--black);
+  --button-sort-active: var(--blue-1);
+
+  --hotel-star: var(--blue-1);
 }
 
 
@@ -109,6 +122,7 @@ a:active {
   text-transform: uppercase;
   border: none;
   outline: none;
+  background-color: var(--white);
 }
 
 .button-blue {
@@ -153,6 +167,17 @@ a:active {
 
 .main-navigation__list {
   list-style: none;
+}
+
+
+
+/* Brand */
+
+.brand {
+  background-image: url("../img/brand-background.jpg");
+  background-color: var(--brand-background-average);
+  width: 1200px;
+  height: 509px;
 }
 
 
@@ -216,6 +241,9 @@ a:active {
   margin: auto;
 }
 
+.benefits__icon {
+  fill: var(--blue-1);
+}
 
 /* Search */
 
@@ -245,27 +273,43 @@ a:active {
   line-height: 26px;
 }
 
-.social__link {
-  background-color: var(--button-blue-background-color);
-  color: var(--white);
+.social__button {
+  width: 46px;
+  height: 48px;
+  background-color: var(--blue-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.social__link:hover {
-  background-color: var(--button-blue-background-color-hover);
-  color: var(--white);
+.social__icon {
+  fill: var(--white);
 }
 
-.social__link:active {
-  background-color: var(--button-blue-background-color-active);
-  color: var(--link-active);
+.social__button:active .social__icon {
+  fill: var(--button-blue-social-color-active);
 }
 
+.logo-academy {
+  fill: var(--logo-academy);
+}
+
+.logo-academy:hover {
+  fill: var(--logo-academy-hover);
+}
+
+.logo-academy:active {
+  fill: var(--logo-academy-active);
+}
 
 
 /* Search form */
 
 .search-form {
   background-color: var(--search-form-background-average);
+  background-image: url("../img/search-form-background.jpg");
+  width: 1200px;
+  height: 217px;
   color: var(--white);
   font-size: 14px;
   line-height: 21px;
@@ -281,10 +325,14 @@ a:active {
   font-weight: 700;
 }
 
+.search-form__cost-min,
+.search-form__cost-max {
+  background: transparent;
+}
+
 .search-form__cost-min::placeholder,
 .search-form__cost-max::placeholder {
   text-transform: uppercase;
-  background-color: var(--search-form-background-average);
   color: var(--white);
 }
 
@@ -293,7 +341,7 @@ a:active {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
-  background-color: var(--search-form-background-average);
+  background: transparent;
   color: var(--white);
   border: 2px solid #FFFFFF;
 }
@@ -350,4 +398,24 @@ a:active {
 .search-result__item-button {
   font-size: 14px;
   line-height: 21px;
+}
+
+.search-result__sort-order {
+  fill: var(--button-sort);
+}
+
+.search-result__sort-order:hover {
+  fill: var(--button-sort-hover);
+}
+
+.search-result__sort-order:active {
+  fill: var(--button-sort-active);
+}
+
+.search-result__sort-order-active {
+  fill: var(--button-sort-active);
+}
+
+.search-result__hotel-star {
+  fill: var(--hotel-star);
 }
