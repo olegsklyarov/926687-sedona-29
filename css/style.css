@@ -312,6 +312,13 @@ a:active {
 
 /* Footer */
 
+.main-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
 .contacts {
   font-weight: 700;
   text-align: center;
@@ -326,6 +333,12 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.social__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5px;
 }
 
 .social__icon {
