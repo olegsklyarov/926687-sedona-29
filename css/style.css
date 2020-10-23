@@ -442,6 +442,19 @@ a:active {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  margin: 0;
+}
+
+.search-result__body {
+  display: grid;
+  grid-template-columns: 100px 130px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+
+.search-result__image {
+  align-self: center;
 }
 
 .search-result__sort {
@@ -510,4 +523,24 @@ a:active {
 
 .search-result__hotel-star {
   fill: var(--hotel-star);
+}
+
+.search-result-item {
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+  height: 90px;
+  padding-bottom: 30px;
+}
+
+.search-result__rating {
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: center;
+}
+
+.search-result__rating-stars {
+  padding: 0;
+  display: flex;
 }
