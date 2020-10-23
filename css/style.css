@@ -372,16 +372,28 @@ a:active {
   color: var(--white);
   font-size: 14px;
   line-height: 21px;
+  display: grid;
+  grid-template-columns: 300px 500px auto;
 }
 
-.search-form fieldset {
+.search-form__infrastructure,
+.search-form__type,
+.search-form__cost {
   border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.search-form legend {
+.search-form__cost__min-max {
+  display: flex;
+}
+
+.search-form h3 {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
+  margin: 0;
 }
 
 .search-form__cost-min,
