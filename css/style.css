@@ -426,6 +426,18 @@ a:active {
 
 /* Search result */
 
+.search-result {
+  margin-left: 73px;
+  margin-right: 73px;
+}
+
+.search-result__sorting {
+  display: grid;
+  grid-template-columns: repeat(3, 300px) auto;
+  align-items: center;
+  /*justify-items: end;*/
+}
+
 .search-result__header {
   font-weight: 700;
   font-size: 21px;
@@ -435,6 +447,11 @@ a:active {
 .search-result__sort {
   font-size: 12px;
   line-height: 18px;
+}
+
+.search-result__sort-list {
+  display: flex;
+  justify-content: space-around;
 }
 
 .search-result__sort-type-button {
@@ -485,6 +502,10 @@ a:active {
 
 .search-result__sort-order-active {
   fill: var(--button-sort-active);
+}
+
+.search-result__sort-order-items {
+  justify-self: end;
 }
 
 .search-result__hotel-star {

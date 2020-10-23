@@ -71,36 +71,38 @@
       </div>
     </form>
 
-    <section>
-      <h2 class="search-result__header">Найдено: 3</h2>
-      <p class="search-result__sort">Сортировка:</p>
-      <ul class="search-result__sort list-style-none">
-        <li>
-          <button class="search-result__sort-type-button search-result__sort-type-button__selected" type="button">По цене</button>
-        </li>
-        <li>
-          <button class="search-result__sort-type-button" type="button">По типу</button>
-        </li>
-        <li>
-          <button class="search-result__sort-type-button" type="button">По рейтингу</button>
-        </li>
-      </ul>
-      <ul class="list-style-none">
-        <li>
-          <button class="button-common" type="button">
-            <svg class="search-result__sort-order" width="11" height="10">
-              <use xlink:href="img/icons.svg#sort-asc"></use>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button class="button-common" type="button">
-            <svg class="search-result__sort-order search-result__sort-order-active" width="11" height="10">
-              <use xlink:href="img/icons.svg#sort-desc"></use>
-            </svg>
-          </button>
-        </li>
-      </ul>
+    <section class="search-result">
+      <div class="search-result__sorting">
+        <h2 class="search-result__header">Найдено: 3</h2>
+        <p class="search-result__sort">Сортировка:</p>
+        <ul class="search-result__sort search-result__sort-list list-style-none">
+          <li>
+            <button class="search-result__sort-type-button search-result__sort-type-button__selected" type="button">По цене</button>
+          </li>
+          <li>
+            <button class="search-result__sort-type-button" type="button">По типу</button>
+          </li>
+          <li>
+            <button class="search-result__sort-type-button" type="button">По рейтингу</button>
+          </li>
+        </ul>
+        <ul class="list-style-none search-result__sort-order-items">
+          <li>
+            <button class="button-common" type="button">
+              <svg class="search-result__sort-order" width="11" height="10">
+                <use xlink:href="img/icons.svg#sort-asc"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="button-common" type="button">
+              <svg class="search-result__sort-order search-result__sort-order-active" width="11" height="10">
+                <use xlink:href="img/icons.svg#sort-desc"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
 
       <div>
         <img src="img/search-result-amara.jpg" width="135" height="90" alt="Вид на Amara Resort & Spa">
