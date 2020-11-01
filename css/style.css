@@ -217,9 +217,53 @@ a:active {
 
 .benefits__grid {
   display: grid;
-  grid-template-rows: repeat(4, min-content);
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "real-city real-city-picture real-city-picture"
+    "housing food souvenir"
+    "devils-bridge-picture devils-bridge-picture devils-bridge"
+    "small-area fun-travel little-tourists";
+  grid-gap: 0;
   align-items: center;
+}
+
+.benefits__grid__real-city {
+  grid-area: real-city;
+}
+
+.benefits__grid__real-city-picture {
+  grid-area: real-city-picture;
+}
+
+.benefits__grid__housing {
+  grid-area: housing;
+}
+
+.benefits__grid__food {
+  grid-area: food;
+}
+
+.benefits__grid__souvenir {
+  grid-area: souvenir;
+}
+
+.benefits__grid__devils-bridge-picture {
+  grid-area: devils-bridge-picture;
+}
+
+.benefits__grid__devils-bridge {
+  grid-area: devils-bridge;
+}
+
+.benefits__grid__small-area {
+  grid-area: small-area;
+}
+
+.benefits__grid__fun-travel {
+  grid-area: fun-travel;
+}
+
+.benefits__grid__little-tourists {
+  grid-area: little-tourists;
 }
 
 .benefits__unappreciated {
@@ -235,14 +279,6 @@ a:active {
   font-size: 14px;
   line-height: 26px;
   text-align: center;
-}
-
-.benefits__town {
-  grid-column: span 2;
-}
-
-.benefits__bridge {
-  grid-column: span 2;
 }
 
 .benefits__benefit-block {
