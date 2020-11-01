@@ -222,8 +222,14 @@ a:active {
     "housing food souvenir"
     "devils-bridge-picture devils-bridge-picture devils-bridge"
     "small-area fun-travel little-tourists";
+  grid-template-rows: 256px 300px 256px 256px;
   grid-gap: 0;
+}
+
+.benefits__grid-centered {
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .benefits__grid__real-city {
@@ -565,7 +571,7 @@ a:active {
   display: grid;
   grid-template-columns: 200px auto 200px;
   height: 90px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .search-result__rating {
