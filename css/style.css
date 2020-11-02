@@ -30,6 +30,7 @@
   --gray-2: #EEEEEE;
   --gray-3: #333333;
   --gray-4: #CACACA;
+  --gray-5: #E5E5E5;
   --brown-1: #766357;
   --brown-2: #604E43;
   --brown-3: #503E33;
@@ -223,6 +224,7 @@ a:active {
     "devils-bridge-picture devils-bridge-picture devils-bridge"
     "small-area fun-travel little-tourists";
   grid-template-rows: 256px 300px 256px 256px;
+  grid-template-columns: repeat(3,400px);
   grid-gap: 0;
 }
 
@@ -468,16 +470,13 @@ a:active {
 
 /* Search result */
 
-.search-result {
-  margin-left: 73px;
-  margin-right: 73px;
-}
 
 .search-result__sorting {
   display: grid;
   grid-template-columns: repeat(3, 300px) auto;
   align-items: center;
-  /*justify-items: end;*/
+  padding-left: 73px;
+  padding-right: 73px;
 }
 
 .search-result__header {
@@ -570,8 +569,16 @@ a:active {
 .search-result-item {
   display: grid;
   grid-template-columns: 200px auto 200px;
-  height: 90px;
+  height: 150px;
+  align-items: center;
   margin-bottom: 30px;
+  padding-left: 73px;
+  padding-right: 73px;
+  border-top: 1px var(--gray-5) solid;
+}
+
+.search-result-item:last-child {
+  border-bottom: 1px var(--gray-5) solid;
 }
 
 .search-result__rating {
