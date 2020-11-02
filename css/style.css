@@ -73,7 +73,9 @@
   --hotel-star: var(--blue-1);
 }
 
-
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 body {
   min-width: 1200px;
@@ -416,8 +418,17 @@ a:active {
   color: var(--white);
   font-size: 14px;
   line-height: 21px;
-  display: grid;
-  grid-template-columns: 300px 500px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 73px;
+}
+
+.search-form__checkboxes {
+  display: flex;
+}
+
+.search-form__infrastructure {
+  margin-right: 119px;
 }
 
 .search-form__infrastructure,

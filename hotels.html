@@ -23,36 +23,38 @@
 
   <main>
     <form class="search-form" action="https://echo.htmlacademy.ru">
-      <div class="search-form__infrastructure">
-        <h3>Инфраструктура:</h3>
-        <label>
-          <input type="checkbox" name="infrastructure_swimming-pool">
-          Бассейн
-        </label>
-        <label>
-          <input type="checkbox" name="infrastructure_parking">
-          Парковка
-        </label>
-        <label>
-          <input type="checkbox" name="infrastructure_wifi">
-          Wi-Fi
-        </label>
-      </div>
+      <div class="search-form__checkboxes">
+        <div class="search-form__infrastructure">
+          <h3>Инфраструктура:</h3>
+          <label>
+            <input type="checkbox" name="infrastructure_swimming-pool">
+            Бассейн
+          </label>
+          <label>
+            <input type="checkbox" name="infrastructure_parking">
+            Парковка
+          </label>
+          <label>
+            <input type="checkbox" name="infrastructure_wifi">
+            Wi-Fi
+          </label>
+        </div>
 
-      <div class="search-form__type">
-        <h3>Тип жилья:</h3>
-        <label>
-          <input type="checkbox" name="type_hotel">
-          Гостиница
-        </label>
-        <label>
-          <input type="checkbox" name="type_motel">
-          Мотель
-        </label>
-        <label>
-          <input type="checkbox" name="type_apartments">
-          Апартаменты
-        </label>
+        <div class="search-form__type">
+          <h3>Тип жилья:</h3>
+          <label>
+            <input type="checkbox" name="type_hotel">
+            Гостиница
+          </label>
+          <label>
+            <input type="checkbox" name="type_motel">
+            Мотель
+          </label>
+          <label>
+            <input type="checkbox" name="type_apartments">
+            Апартаменты
+          </label>
+        </div>
       </div>
 
       <div class="search-form__cost">
@@ -66,6 +68,10 @@
             <input class="search-form__cost-max" type="number" name="cost_max" max="3000" placeholder="До 3000">
           </label>
         </div>
+
+        <label>
+          <input type="range">
+        </label>
 
         <button class="search-form__button-submit" type="submit">Показать</button>
       </div>
