@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 <head>
   <meta charset="utf-8">
   <title>Гостиницы в Седоне</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-body">
   <header>
     <nav class="main-navigation">
-      <a>
+      <a class="main-navigation__logo">
         <img src="img/navigation-logo.svg" width="138" height="70" alt="Логотип города Седона">
       </a>
       <ul class="main-navigation__list">
         <li><a href="">Информация</a></li>
-        <li><a href="">Фото и видео</a></li>
+        <li class="main-navigation__skip-logo"><a href="">Фото и видео</a></li>
         <li><a href="">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="container">
+  <main>
     <section class="brand">
-      <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
       <img src="img/brand-welcome.svg" width="456" height="350" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
     </section>
     <section class="benefits">
@@ -31,62 +30,86 @@
         <p class="benefits__unappreciated">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="benefits__five-advantages">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
-      <div>
-        <div class="benefits__benefit-block benefits__benefit-block-blue">
-          <h3 class="benefits__benefit-block-header">Настоящий городок</h3>
-          <p>— №1 —</p>
-          <p class="benefits__benefit-block-blue-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+
+      <div class="benefits__grid">
+        <div class="benefits__grid__real-city benefits__grid-centered benefits__benefit-block benefits__benefit-block-blue">
+          <div>
+            <h3 class="benefits__benefit-block-header">Настоящий городок</h3>
+            <p>— №1 —</p>
+            <p class="benefits__benefit-block-blue-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
         </div>
-        <img src="img/benefits-town.jpg" width="800" height="256" alt="Вид на местное здание">
-      </div>
-      <ul class="list-style-none">
-        <li class="benefits__benefit-block">
-          <svg class="benefits__icon" width="75" height="72">
-            <use xlink:href="img/icons.svg#benefits-house"></use>
-          </svg>
-          <h3>Жильё</h3>
-          <p class="benefits__benefit-block-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-        </li>
-        <li class="benefits__benefit-block">
-          <svg class="benefits__icon" width="75" height="70">
-            <use xlink:href="img/icons.svg#benefits-food"></use>
-          </svg>
-          <h3>Еда</h3>
-          <p class="benefits__benefit-block-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-        <li class="benefits__benefit-block">
-          <svg class="benefits__icon" width="64" height="77">
-            <use xlink:href="img/icons.svg#benefits-souvenir"></use>
-          </svg>
-          <h3>Сувениры</h3>
-          <p class="benefits__benefit-block-text">Не только китайского, но и местного производства!</p>
-        </li>
-      </ul>
-      <div>
-        <img src="img/benefits-bridge.jpg" width="800" height="256" alt="Мост Дьявола">
-        <div class="benefits__benefit-block benefits__benefit-block-blue">
-          <h3 class="benefits__benefit-block-header">Там есть Мост дьявола</h3>
-          <p>— №2 —</p>
-          <p class="benefits__benefit-block-blue-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+
+        <div class="benefits__grid__real-city-picture">
+          <img src="img/benefits-town.jpg" width="800" height="256" alt="Вид на местное здание">
+        </div>
+
+        <div class="benefits__grid__housing benefits__grid-centered benefits__benefit-block">
+          <div>
+            <svg class="benefits__icon" width="75" height="72">
+              <use xlink:href="img/icons.svg#benefits-house"></use>
+            </svg>
+            <h3>Жильё</h3>
+            <p class="benefits__benefit-block-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </div>
+        </div>
+
+        <div class="benefits__grid__food benefits__grid-centered benefits__benefit-block">
+          <div>
+            <svg class="benefits__icon" width="75" height="70">
+              <use xlink:href="img/icons.svg#benefits-food"></use>
+            </svg>
+            <h3>Еда</h3>
+            <p class="benefits__benefit-block-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+        </div>
+
+        <div class="benefits__grid__souvenir benefits__grid-centered benefits__benefit-block">
+          <div>
+            <svg class="benefits__icon" width="64" height="77">
+              <use xlink:href="img/icons.svg#benefits-souvenir"></use>
+            </svg>
+            <h3>Сувениры</h3>
+            <p class="benefits__benefit-block-text">Не только китайского, но и местного производства!</p>
+          </div>
+        </div>
+
+        <div class="benefits__grid__devils-bridge-picture">
+          <img src="img/benefits-bridge.jpg" width="800" height="256" alt="Мост Дьявола">
+        </div>
+
+        <div class="benefits__grid__devils-bridge benefits__grid-centered benefits__benefit-block benefits__benefit-block-blue">
+          <div>
+            <h3 class="benefits__benefit-block-header">Там есть Мост дьявола</h3>
+            <p>— №2 —</p>
+            <p class="benefits__benefit-block-blue-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+        </div>
+
+        <div class="benefits__grid__small-area benefits__grid-centered benefits__benefit-block benefits__benefit-block-gray">
+          <div>
+            <h3 class="benefits__benefit-block-header benefits__benefit-block-gray-header">Небольшая площадь</h3>
+            <p>— №3 —</p>
+            <p class="benefits__benefit-block-gray-text">Все достопримечательности находятся очень близко</p>
+          </div>
+        </div>
+
+        <div class="benefits__grid__fun-travel benefits__grid-centered benefits__benefit-block benefits__benefit-block-gray">
+          <div>
+            <h3 class="benefits__benefit-block-header benefits__benefit-block-gray-header">Красивая дорога</h3>
+            <p>— №4 —</p>
+            <p class="benefits__benefit-block-gray-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+        </div>
+
+        <div class="benefits__grid__little-tourists benefits__grid-centered benefits__benefit-block benefits__benefit-block-gray">
+          <div>
+            <h3 class="benefits__benefit-block-header benefits__benefit-block-gray-header">Мало туристов</h3>
+            <p>— №5 —</p>
+            <p class="benefits__benefit-block-gray-text">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
         </div>
       </div>
-      <ul class="list-style-none">
-        <li class="benefits__benefit-block benefits__benefit-block-gray">
-          <h3 class="benefits__benefit-block-header benefits__benefit-block-gray-header">Небольшая площадь</h3>
-          <p>— №3 —</p>
-          <p class="benefits__benefit-block-gray-text">Все достопримечательности находятся очень близко</p>
-        </li>
-        <li class="benefits__benefit-block benefits__benefit-block-gray">
-          <h3 class="benefits__benefit-block-header benefits__benefit-block-gray-header">Красивая дорога</h3>
-          <p>— №4 —</p>
-          <p class="benefits__benefit-block-gray-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-        <li class="benefits__benefit-block benefits__benefit-block-gray">
-          <h3 class="benefits__benefit-block-header benefits__benefit-block-gray-header">Мало туристов</h3>
-          <p>— №5 —</p>
-          <p class="benefits__benefit-block-gray-text">Большинство едет в Гранд Каньон и толпится там</p>
-        </li>
-      </ul>
     </section>
     <section class="search">
       <h2 class="search__header">Заинтересовались?</h2>
@@ -97,12 +120,12 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="main-footer">
     <div class="contacts">
       <p>#VISITSEDONA</p>
       Тел: <a href="tel:+74956660166">+7(495) 666-01-66</a>
     </div>
-    <ul class="list-style-none">
+    <ul class="list-style-none social__items">
       <li>
         <a class="social__button button-blue" href="" title="Наш аккаунт Twitter">
           <svg class="social__icon" width="17" height="17">

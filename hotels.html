@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>Гостиницы в Седоне</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-body">
   <header>
     <nav class="main-navigation">
-      <a href="index.html">
+      <a class="main-navigation__logo" href="/">
         <img src="img/navigation-logo.svg" width="138" height="70" alt="Логотип города Седона">
       </a>
       <ul class="main-navigation__list">
         <li><a href="">Информация</a></li>
-        <li><a href="">Фото и видео</a></li>
+        <li class="main-navigation__skip-logo"><a href="">Фото и видео</a></li>
         <li><a href="">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
@@ -23,8 +23,8 @@
 
   <main>
     <form class="search-form" action="https://echo.htmlacademy.ru">
-      <fieldset>
-        <legend>Инфраструктура:</legend>
+      <div class="search-form__infrastructure">
+        <h3>Инфраструктура:</h3>
         <label>
           <input type="checkbox" name="infrastructure_swimming-pool">
           Бассейн
@@ -37,10 +37,10 @@
           <input type="checkbox" name="infrastructure_wifi">
           Wi-Fi
         </label>
-      </fieldset>
+      </div>
 
-      <fieldset>
-        <legend>Тип жилья:</legend>
+      <div class="search-form__type">
+        <h3>Тип жилья:</h3>
         <label>
           <input type="checkbox" name="type_hotel">
           Гостиница
@@ -53,143 +53,166 @@
           <input type="checkbox" name="type_apartments">
           Апартаменты
         </label>
-      </fieldset>
+      </div>
 
-      <fieldset>
-        <legend>Стоимость в сутки (Р):</legend>
-        <label>
-          <input class="search-form__cost-min" type="number" name="cost_min" min="0" placeholder="От 0">
-        </label>
-        <label>
-          <input class="search-form__cost-max" type="number" name="cost_max" max="3000" placeholder="До 3000">
-        </label>
-      </fieldset>
+      <div class="search-form__cost">
+        <h3>Стоимость в сутки (Р):</h3>
 
-      <button class="search-form__button-submit" type="submit">Показать</button>
+        <div class="search-form__cost__min-max">
+          <label>
+            <input class="search-form__cost-min" type="number" name="cost_min" min="0" placeholder="От 0">
+          </label>
+          <label>
+            <input class="search-form__cost-max" type="number" name="cost_max" max="3000" placeholder="До 3000">
+          </label>
+        </div>
+
+        <button class="search-form__button-submit" type="submit">Показать</button>
+      </div>
     </form>
 
-    <section>
-      <h2 class="search-result__header">Найдено: 3</h2>
-      <p class="search-result__sort">Сортировка:</p>
-      <ul class="search-result__sort list-style-none">
-        <li>
-          <button class="search-result__sort-type-button search-result__sort-type-button__selected" type="button">По цене</button>
-        </li>
-        <li>
-          <button class="search-result__sort-type-button" type="button">По типу</button>
-        </li>
-        <li>
-          <button class="search-result__sort-type-button" type="button">По рейтингу</button>
-        </li>
-      </ul>
-      <ul class="list-style-none">
-        <li>
-          <button class="button-common" type="button">
-            <svg class="search-result__sort-order" width="11" height="10">
-              <use xlink:href="img/icons.svg#sort-asc"></use>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button class="button-common" type="button">
-            <svg class="search-result__sort-order search-result__sort-order-active" width="11" height="10">
-              <use xlink:href="img/icons.svg#sort-desc"></use>
-            </svg>
-          </button>
-        </li>
-      </ul>
-
-      <div>
-        <img src="img/search-result-amara.jpg" width="135" height="90" alt="Вид на Amara Resort & Spa">
-        <h3 class="search-result__header">Amara Resort & Spa</h3>
-        <p>Гостиница</p>
-        <p>От 4000 Р.</p>
-        <button class="search-result__item-button button-common button-blue" type="button">Подробнее</button>
-        <button class="search-result__item-button button-common button-brown" type="button">Забронировать</button>
-        <ul class="list-style-none">
+    <section class="search-result">
+      <div class="search-result__sorting">
+        <h2 class="search-result__header">Найдено: 3</h2>
+        <p class="search-result__sort">Сортировка:</p>
+        <ul class="search-result__sort search-result__sort-list list-style-none">
           <li>
-            <svg class="search-result__hotel-star" width="19" height="17">
-              <use xlink:href="img/icons.svg#star"></use>
-            </svg>
+            <button class="search-result__sort-type-button search-result__sort-type-button__selected" type="button">По цене</button>
           </li>
           <li>
-            <svg class="search-result__hotel-star" width="19" height="17">
-              <use xlink:href="img/icons.svg#star"></use>
-            </svg>
+            <button class="search-result__sort-type-button" type="button">По типу</button>
           </li>
           <li>
-            <svg class="search-result__hotel-star" width="19" height="17">
-              <use xlink:href="img/icons.svg#star"></use>
-            </svg>
-          </li>
-          <li>
-            <svg class="search-result__hotel-star" width="19" height="17">
-              <use xlink:href="img/icons.svg#star"></use>
-            </svg>
+            <button class="search-result__sort-type-button" type="button">По рейтингу</button>
           </li>
         </ul>
-        <p>Рейтинг: 8,5</p>
+        <ul class="list-style-none search-result__sort-order-items">
+          <li>
+            <button class="button-common" type="button">
+              <svg class="search-result__sort-order" width="11" height="10">
+                <use xlink:href="img/icons.svg#sort-asc"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="button-common" type="button">
+              <svg class="search-result__sort-order search-result__sort-order-active" width="11" height="10">
+                <use xlink:href="img/icons.svg#sort-desc"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
       </div>
 
-      <div>
-        <img src="img/search-result-desert.jpg" width="135" height="90" alt="Вид на Desert Quail Inn">
-        <h3 class="search-result__header">Desert Quail Inn</h3>
-        <p>Мотель</p>
-        <p>От 3000 Р.</p>
-        <button class="search-result__item-button button-common button-blue" type="button">Подробнее</button>
-        <button class="search-result__item-button button-common button-brown" type="button">Забронировать</button>
-        <ul class="list-style-none">
-          <li>
-            <svg class="search-result__hotel-star" width="19" height="17">
-              <use xlink:href="img/icons.svg#star"></use>
-            </svg>
-          </li>
-          <li>
-            <svg class="search-result__hotel-star" width="19" height="17">
-              <use xlink:href="img/icons.svg#star"></use>
-            </svg>
-          </li>
-          <li>
-            <svg class="search-result__hotel-star" width="19" height="17">
-              <use xlink:href="img/icons.svg#star"></use>
-            </svg>
-          </li>
-        </ul>
-        <p>Рейтинг: 8,9</p>
+      <div class="search-result-item">
+        <img class="search-result__image" src="img/search-result-amara.jpg" width="135" height="90" alt="Вид на Amara Resort & Spa">
+        <div>
+          <h3 class="search-result__header">Amara Resort & Spa</h3>
+          <div class="search-result__body">
+            <div>Гостиница</div>
+            <div>От 4000 Р.</div>
+            <button class="search-result__item-button button-common button-blue" type="button">Подробнее</button>
+            <button class="search-result__item-button button-common button-brown" type="button">Забронировать</button>
+          </div>
+        </div>
+        <div class="search-result__rating">
+          <ul class="list-style-none search-result__rating-stars">
+            <li>
+              <svg class="search-result__hotel-star" width="19" height="17">
+                <use xlink:href="img/icons.svg#star"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="search-result__hotel-star" width="19" height="17">
+                <use xlink:href="img/icons.svg#star"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="search-result__hotel-star" width="19" height="17">
+                <use xlink:href="img/icons.svg#star"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="search-result__hotel-star" width="19" height="17">
+                <use xlink:href="img/icons.svg#star"></use>
+              </svg>
+            </li>
+          </ul>
+          <p>Рейтинг: 8,5</p>
+        </div>
       </div>
 
-      <div>
-        <img src="img/search-result-villas.jpg" width="135" height="90" alt="Вид на Villas at Poco Diablo">
-        <h3 class="search-result__header">Villas at Poco Diablo</h3>
-        <p>Апартаменты</p>
-        <p>От 2000 Р.</p>
-        <button class="search-result__item-button button-common button-blue" type="button">Подробнее</button>
-        <button class="search-result__item-button button-common button-brown" type="button">Забронировать</button>
-        <ul class="list-style-none">
-          <li>
-            <svg class="search-result__hotel-star" width="19" height="17">
-              <use xlink:href="img/icons.svg#star"></use>
-            </svg>
-          </li>
-          <li>
-            <svg class="search-result__hotel-star" width="19" height="17">
-              <use xlink:href="img/icons.svg#star"></use>
-            </svg>
-          </li>
-        </ul>
-        <p>Рейтинг: 9,2</p>
+      <div class="search-result-item">
+        <img class="search-result__image" src="img/search-result-desert.jpg" width="135" height="90" alt="Вид на Desert Quail Inn">
+        <div>
+          <h3 class="search-result__header">Desert Quail Inn</h3>
+          <div class="search-result__body">
+            <div>Мотель</div>
+            <div>От 3000 Р.</div>
+            <button class="search-result__item-button button-common button-blue" type="button">Подробнее</button>
+            <button class="search-result__item-button button-common button-brown" type="button">Забронировать</button>
+          </div>
+        </div>
+        <div class="search-result__rating">
+          <ul class="list-style-none search-result__rating-stars">
+            <li>
+              <svg class="search-result__hotel-star" width="19" height="17">
+                <use xlink:href="img/icons.svg#star"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="search-result__hotel-star" width="19" height="17">
+                <use xlink:href="img/icons.svg#star"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="search-result__hotel-star" width="19" height="17">
+                <use xlink:href="img/icons.svg#star"></use>
+              </svg>
+            </li>
+          </ul>
+          <p>Рейтинг: 8,9</p>
+        </div>
+      </div>
+
+      <div class="search-result-item">
+        <img class="search-result__image" src="img/search-result-villas.jpg" width="135" height="90" alt="Вид на Villas at Poco Diablo">
+        <div>
+          <h3 class="search-result__header">Villas at Poco Diablo</h3>
+          <div class="search-result__body">
+            <div>Апартаменты</div>
+            <div>От 2000 Р.</div>
+            <button class="search-result__item-button button-common button-blue" type="button">Подробнее</button>
+            <button class="search-result__item-button button-common button-brown" type="button">Забронировать</button>
+          </div>
+        </div>
+        <div class="search-result__rating">
+          <ul class="list-style-none search-result__rating-stars">
+            <li>
+              <svg class="search-result__hotel-star" width="19" height="17">
+                <use xlink:href="img/icons.svg#star"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="search-result__hotel-star" width="19" height="17">
+                <use xlink:href="img/icons.svg#star"></use>
+              </svg>
+            </li>
+          </ul>
+          <p>Рейтинг: 9,2</p>
+        </div>
       </div>
 
     </section>
 
   </main>
 
-  <footer>
+  <footer class="main-footer">
     <div class="contacts">
       <p>#VISITSEDONA</p>
       Тел: <a href="tel:+74956660166">+7(495) 666-01-66</a>
     </div>
-    <ul class="list-style-none">
+    <ul class="list-style-none social__items">
       <li>
         <a class="social__button button-blue" href="" title="Наш аккаунт Twitter">
           <svg class="social__icon" width="17" height="17">
