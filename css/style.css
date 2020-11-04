@@ -361,13 +361,25 @@ a:active {
 
 /* Search */
 
+.search__button-block {
+  height: 291px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
 .search__header {
   font-size: 30px;
-  text-align: center;
+  margin: 0;
 }
 
 .search__text {
   text-align: center;
+  max-width: 450px;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .search__button {
@@ -375,6 +387,8 @@ a:active {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  width: 568px;
+  height: 86px;
 }
 
 
