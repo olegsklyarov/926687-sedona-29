@@ -441,17 +441,23 @@ a:active {
   display: flex;
 }
 
-.search-form__infrastructure {
-  margin-right: 119px;
+.search-form__header {
+  font-size: 16px;
+  margin: 0;
 }
 
 .search-form__infrastructure,
 .search-form__type,
 .search-form__cost {
-  border: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.search-form__infrastructure {
+  margin-right: 120px;
 }
 
 .search-form__cost__price-controls {
@@ -524,6 +530,9 @@ a:active {
   background: transparent;
   color: var(--white);
   border: 2px solid #FFFFFF;
+  width: 137px;
+  height: 36px;
+  align-self: center;
 }
 
 .search-form__button-submit:hover {

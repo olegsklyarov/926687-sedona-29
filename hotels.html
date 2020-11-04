@@ -24,8 +24,8 @@
   <main>
     <form class="search-form" action="https://echo.htmlacademy.ru">
       <div class="search-form__checkboxes">
-        <fieldset class="search-form__infrastructure">
-          <legend>Инфраструктура:</legend>
+        <div class="search-form__infrastructure">
+          <h3 class="search-form__header">Инфраструктура:</h3>
           <label>
             <input type="checkbox" name="infrastructure_swimming-pool">
             Бассейн
@@ -38,10 +38,10 @@
             <input type="checkbox" name="infrastructure_wifi">
             Wi-Fi
           </label>
-        </fieldset>
+        </div>
 
-        <fieldset class="search-form__type">
-          <legend>Тип жилья:</legend>
+        <div class="search-form__type">
+          <h3 class="search-form__header">Тип жилья:</h3>
           <label>
             <input type="checkbox" name="type_hotel">
             Гостиница
@@ -54,11 +54,10 @@
             <input type="checkbox" name="type_apartments">
             Апартаменты
           </label>
-        </fieldset>
+        </div>
       </div>
-
-      <fieldset class="search-form__cost">
-        <legend>Стоимость в сутки (Р):</legend>
+      <div class="search-form__cost">
+        <h3 class="search-form__header">Стоимость в сутки (Р):</h3>
 
         <div class="search-form__cost__price-controls">
           <label>
@@ -78,7 +77,7 @@
         </div>
 
         <button class="search-form__button-submit" type="submit">Показать</button>
-      </fieldset>
+      </div>
     </form>
 
     <section class="search-result">
