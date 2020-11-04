@@ -239,7 +239,7 @@ a:active {
     "housing food souvenir"
     "devils-bridge-picture devils-bridge-picture devils-bridge"
     "small-area fun-travel little-tourists";
-  grid-template-rows: 256px 300px 256px 256px;
+  grid-template-rows: 256px 330px 256px 256px;
   grid-template-columns: repeat(3,400px);
   grid-gap: 0;
 }
@@ -248,6 +248,12 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.benefits__benefit-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .benefits__grid__real-city {
@@ -290,19 +296,25 @@ a:active {
   grid-area: little-tourists;
 }
 
+.benefits__intro {
+  display: flex;
+  flex-direction: column;
+  height: 215px;
+  justify-content: center;
+  align-items: center;
+}
+
 .benefits__unappreciated {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
   max-width: 470px;
-  margin: auto;
 }
 
 .benefits__five-advantages {
   font-size: 14px;
   line-height: 26px;
-  text-align: center;
 }
 
 .benefits__benefit-block {
@@ -315,12 +327,10 @@ a:active {
   font-size: 21px;
   line-height: 21px;
   max-width: 149px;
-  margin: auto;
 }
 
 .benefits__benefit-block-text {
   max-width: 285px;
-  margin: auto;
 }
 
 .benefits__benefit-block-blue {
@@ -330,7 +340,6 @@ a:active {
 
 .benefits__benefit-block-blue-text {
   max-width: 305px;
-  margin: auto;
 }
 
 .benefits__benefit-block-gray {
@@ -344,7 +353,6 @@ a:active {
 
 .benefits__benefit-block-gray-text {
   max-width: 258px;
-  margin: auto;
 }
 
 .benefits__icon {
