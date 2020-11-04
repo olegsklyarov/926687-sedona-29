@@ -546,11 +546,18 @@ a:active {
 
 
 .search-result__sorting {
-  display: grid;
-  grid-template-columns: repeat(3, 300px) auto;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding-left: 73px;
   padding-right: 73px;
+  height: 90px;
+}
+
+.search-result__sorting__left-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .search-result__header {
@@ -577,9 +584,14 @@ a:active {
   line-height: 18px;
 }
 
+.search-result__sort-header {
+  margin-left: 47px;
+}
+
 .search-result__sort-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 280px;
 }
 
 .search-result__sort-type-button {
@@ -633,7 +645,7 @@ a:active {
 }
 
 .search-result__sort-order-items {
-  justify-self: end;
+  display: flex;
 }
 
 .search-result__hotel-star {
