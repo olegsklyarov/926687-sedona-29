@@ -31,6 +31,7 @@
   --gray-3: #333333;
   --gray-4: #CACACA;
   --gray-5: #E5E5E5;
+  --gray-6: #ABABAB;
   --brown-1: #766357;
   --brown-2: #604E43;
   --brown-3: #503E33;
@@ -71,9 +72,13 @@
   --button-sort-active: var(--blue-1);
 
   --hotel-star: var(--blue-1);
+
+  --range-scale-color: #8D8080;
 }
 
-
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 body {
   min-width: 1200px;
@@ -180,22 +185,33 @@ a:active {
   margin: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   padding: 0;
   justify-items: center;
   align-items: center;
 }
 
-.main-navigation__skip-logo {
-  grid-column: span 2;
-  justify-self: start;
-  margin-left: 61px;
-}
 
 .main-navigation__logo {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+}
+
+.main-navigation__left-side {
+  justify-self: start;
+}
+
+.main-navigation__left-side:first-child {
+  margin-left: 72px;
+}
+
+.main-navigation__right-side {
+  justify-self: end;
+}
+
+.main-navigation__right-side:last-child {
+  margin-right: 72px;
 }
 
 
@@ -223,7 +239,7 @@ a:active {
     "housing food souvenir"
     "devils-bridge-picture devils-bridge-picture devils-bridge"
     "small-area fun-travel little-tourists";
-  grid-template-rows: 256px 300px 256px 256px;
+  grid-template-rows: 256px 330px 256px 256px;
   grid-template-columns: repeat(3,400px);
   grid-gap: 0;
 }
@@ -232,6 +248,12 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.benefits__benefit-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .benefits__grid__real-city {
@@ -274,19 +296,25 @@ a:active {
   grid-area: little-tourists;
 }
 
+.benefits__intro {
+  display: flex;
+  flex-direction: column;
+  height: 215px;
+  justify-content: center;
+  align-items: center;
+}
+
 .benefits__unappreciated {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
   max-width: 470px;
-  margin: auto;
 }
 
 .benefits__five-advantages {
   font-size: 14px;
   line-height: 26px;
-  text-align: center;
 }
 
 .benefits__benefit-block {
@@ -299,12 +327,10 @@ a:active {
   font-size: 21px;
   line-height: 21px;
   max-width: 149px;
-  margin: auto;
 }
 
 .benefits__benefit-block-text {
   max-width: 285px;
-  margin: auto;
 }
 
 .benefits__benefit-block-blue {
@@ -314,7 +340,6 @@ a:active {
 
 .benefits__benefit-block-blue-text {
   max-width: 305px;
-  margin: auto;
 }
 
 .benefits__benefit-block-gray {
@@ -328,7 +353,6 @@ a:active {
 
 .benefits__benefit-block-gray-text {
   max-width: 258px;
-  margin: auto;
 }
 
 .benefits__icon {
@@ -337,13 +361,25 @@ a:active {
 
 /* Search */
 
+.search__button-block {
+  height: 291px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
 .search__header {
   font-size: 30px;
-  text-align: center;
+  margin: 0;
 }
 
 .search__text {
   text-align: center;
+  max-width: 450px;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .search__button {
@@ -351,6 +387,8 @@ a:active {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  width: 568px;
+  height: 86px;
 }
 
 
@@ -416,24 +454,79 @@ a:active {
   color: var(--white);
   font-size: 14px;
   line-height: 21px;
-  display: grid;
-  grid-template-columns: 300px 500px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 73px;
+}
+
+.search-form__checkboxes {
+  display: flex;
+}
+
+.search-form__header {
+  font-size: 16px;
+  margin: 0;
 }
 
 .search-form__infrastructure,
 .search-form__type,
 .search-form__cost {
-  border: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
-.search-form__cost__min-max {
+.search-form__infrastructure {
+  margin-right: 120px;
+}
+
+.search-form__cost__price-controls {
   display: flex;
 }
 
-.search-form h3 {
+.search-form__cost__range-controls {
+  height: 21px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.search-form__cost__range-controls .scale {
+  height: 2px;
+  background: var(--range-scale-color);
+}
+
+.search-form__cost__range-controls .bar {
+  width: 85%;
+  height: 2px;
+  background: var(--white);
+}
+
+.search-form__cost__range-controls .toggle {
+  box-sizing: content-box;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--white);
+  background-color: var(--gray-6);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--gray-6);
+  position: absolute;
+  top: 1px;
+  left: 0;
+  cursor: pointer;
+}
+
+.search-form__cost__range-controls .toggle-min {
+  left: 0;
+}
+
+.search-form__cost__range-controls .toggle-max {
+  left: 252px;
+}
+
+.search-form legend {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -459,6 +552,9 @@ a:active {
   background: transparent;
   color: var(--white);
   border: 2px solid #FFFFFF;
+  width: 137px;
+  height: 36px;
+  align-self: center;
 }
 
 .search-form__button-submit:hover {
@@ -472,11 +568,18 @@ a:active {
 
 
 .search-result__sorting {
-  display: grid;
-  grid-template-columns: repeat(3, 300px) auto;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding-left: 73px;
   padding-right: 73px;
+  height: 90px;
+}
+
+.search-result__sorting__left-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .search-result__header {
@@ -488,10 +591,9 @@ a:active {
 
 .search-result__body {
   display: grid;
-  grid-template-columns: 100px 130px;
-  grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
+  grid-template-columns: 110px 140px;
+  grid-template-rows: 30px 30px;
+  grid-gap: 10px;
 }
 
 .search-result__image {
@@ -503,9 +605,14 @@ a:active {
   line-height: 18px;
 }
 
+.search-result__sort-header {
+  margin-left: 47px;
+}
+
 .search-result__sort-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 280px;
 }
 
 .search-result__sort-type-button {
@@ -559,7 +666,7 @@ a:active {
 }
 
 .search-result__sort-order-items {
-  justify-self: end;
+  display: flex;
 }
 
 .search-result__hotel-star {
@@ -568,10 +675,9 @@ a:active {
 
 .search-result-item {
   display: grid;
-  grid-template-columns: 200px auto 200px;
+  grid-template-columns: 162px auto 200px;
   height: 150px;
   align-items: center;
-  margin-bottom: 30px;
   padding-left: 73px;
   padding-right: 73px;
   border-top: 1px var(--gray-5) solid;
