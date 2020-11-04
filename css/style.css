@@ -31,6 +31,7 @@
   --gray-3: #333333;
   --gray-4: #CACACA;
   --gray-5: #E5E5E5;
+  --gray-6: #ABABAB;
   --brown-1: #766357;
   --brown-2: #604E43;
   --brown-3: #503E33;
@@ -71,6 +72,8 @@
   --button-sort-active: var(--blue-1);
 
   --hotel-star: var(--blue-1);
+
+  --range-scale-color: #8D8080;
 }
 
 *, *:before, *:after {
@@ -451,11 +454,51 @@ a:active {
   justify-content: space-around;
 }
 
-.search-form__cost__min-max {
+.search-form__cost__price-controls {
   display: flex;
 }
 
-.search-form h3 {
+.search-form__cost__range-controls {
+  height: 21px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.search-form__cost__range-controls .scale {
+  height: 2px;
+  background: var(--range-scale-color);
+}
+
+.search-form__cost__range-controls .bar {
+  width: 85%;
+  height: 2px;
+  background: var(--white);
+}
+
+.search-form__cost__range-controls .toggle {
+  box-sizing: content-box;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--white);
+  background-color: var(--gray-6);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--gray-6);
+  position: absolute;
+  top: 1px;
+  left: 0;
+  cursor: pointer;
+}
+
+.search-form__cost__range-controls .toggle-min {
+  left: 0;
+}
+
+.search-form__cost__range-controls .toggle-max {
+  left: 252px;
+}
+
+.search-form legend {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;

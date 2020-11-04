@@ -24,8 +24,8 @@
   <main>
     <form class="search-form" action="https://echo.htmlacademy.ru">
       <div class="search-form__checkboxes">
-        <div class="search-form__infrastructure">
-          <h3>Инфраструктура:</h3>
+        <fieldset class="search-form__infrastructure">
+          <legend>Инфраструктура:</legend>
           <label>
             <input type="checkbox" name="infrastructure_swimming-pool">
             Бассейн
@@ -38,10 +38,10 @@
             <input type="checkbox" name="infrastructure_wifi">
             Wi-Fi
           </label>
-        </div>
+        </fieldset>
 
-        <div class="search-form__type">
-          <h3>Тип жилья:</h3>
+        <fieldset class="search-form__type">
+          <legend>Тип жилья:</legend>
           <label>
             <input type="checkbox" name="type_hotel">
             Гостиница
@@ -54,13 +54,13 @@
             <input type="checkbox" name="type_apartments">
             Апартаменты
           </label>
-        </div>
+        </fieldset>
       </div>
 
-      <div class="search-form__cost">
-        <h3>Стоимость в сутки (Р):</h3>
+      <fieldset class="search-form__cost">
+        <legend>Стоимость в сутки (Р):</legend>
 
-        <div class="search-form__cost__min-max">
+        <div class="search-form__cost__price-controls">
           <label>
             <input class="search-form__cost-min" type="number" name="cost_min" min="0" placeholder="От 0">
           </label>
@@ -69,12 +69,16 @@
           </label>
         </div>
 
-        <label>
-          <input type="range">
-        </label>
+        <div class="search-form__cost__range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="toggle toggle-min" tabindex="0"></div>
+          <div class="toggle toggle-max" tabindex="0"></div>
+        </div>
 
         <button class="search-form__button-submit" type="submit">Показать</button>
-      </div>
+      </fieldset>
     </form>
 
     <section class="search-result">
