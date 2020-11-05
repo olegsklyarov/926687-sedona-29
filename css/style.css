@@ -196,6 +196,7 @@ a:active {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+  z-index: 1;
 }
 
 .main-navigation__left-side {
@@ -226,6 +227,7 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .brand:after {
@@ -233,9 +235,10 @@ a:active {
   width: 1200px;
   height: 57px;
   background-image: url("../img/brand-welcome-shape.svg");
-  /** TODO это какой-то хак, как сделать правильно? **/
   position: absolute;
-  top: 508px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 
