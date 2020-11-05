@@ -32,6 +32,7 @@
   --gray-4: #CACACA;
   --gray-5: #E5E5E5;
   --gray-6: #ABABAB;
+  --gray-7: #F2F2F2;
   --brown-1: #766357;
   --brown-2: #604E43;
   --brown-3: #503E33;
@@ -384,6 +385,50 @@ a:active {
 }
 
 /* Search */
+
+.search__button-and-popup-form {
+  position: relative;
+}
+
+.search__popup-form {
+  padding: 55px;
+  position: absolute;
+  width: 568px;
+  height: 395px;
+  top: 86px;
+  left: 0;
+  background: var(--white);
+}
+
+.search__popup-form__input {
+  border: none;
+  background-color: var(--gray-7);
+  padding: 6px 13px;
+  position: relative;
+}
+
+.search__popup-form__input::placeholder {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.search__popup-form__date:after {
+  content: "";
+  display: inline-block;
+  background-image: url("../img/calendar.svg");
+  width: 21px;
+  height: 23px;
+  position: absolute;
+}
+
+.search__popup-form__label {
+  color: var(--black);
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
 .search__button-block {
   height: 291px;
