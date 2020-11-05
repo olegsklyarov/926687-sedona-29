@@ -228,6 +228,16 @@ a:active {
   align-items: center;
 }
 
+.brand:after {
+  content: "";
+  width: 1200px;
+  height: 57px;
+  background-image: url("../img/brand-welcome-shape.svg");
+  /** TODO это какой-то хак, как сделать правильно? **/
+  position: absolute;
+  top: 508px;
+}
+
 
 
 /* Benefits */
