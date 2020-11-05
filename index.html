@@ -9,7 +9,7 @@
 <body class="page-body">
   <header>
     <nav class="main-navigation">
-      <a class="main-navigation__logo">
+      <a class="main-navigation__logo" href="/">
         <img src="img/navigation-logo.svg" width="138" height="70" alt="Логотип города Седона">
       </a>
       <ul class="main-navigation__list">
@@ -116,7 +116,43 @@
         <h2 class="search__header">Заинтересовались?</h2>
         <p class="search__text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в
           Седоне</p>
-        <button class="search__button button-common button-brown" type="button">Поиск гостиницы в Cедоне</button>
+        <div class="search__button-and-popup-form">
+          <button class="search__button button-common button-brown" type="button">Поиск гостиницы в Cедоне</button>
+          <div class="search__popup-form">
+            <div class="search__popup-form__label-and-input">
+              <label class="search__popup-form__label">
+                Дата заезда:
+                <input class="search__popup-form__input search__popup-form__date" type="text" placeholder="24 апреля 2017">
+              </label>
+            </div>
+            <div class="search__popup-form__label-and-input">
+              <label class="search__popup-form__label">
+                Дата выезда:
+                <input class="search__popup-form__input search__popup-form__date" type="text" placeholder="4 июля 2017">
+              </label>
+            </div>
+
+            <div class="search__popup-form__label-and-input">
+              <label class="search__popup-form__label">
+                Взрослые:
+                <button>-</button>
+                <input class="search__popup-form__input" type="text" placeholder="2">
+                <button>+</button>
+              </label>
+            </div>
+
+            <div class="search__popup-form__label-and-input">
+              <label class="search__popup-form__label">
+                Дети:
+                <button>-</button>
+                <input class="search__popup-form__input" type="text" placeholder="0">
+                <button>+</button>
+              </label>
+            </div>
+
+            <button>Найти</button>
+          </div>
+        </div>
       </div>
       <img src="img/map.jpg" width="1199" height="593" alt="Карта Седоны">
     </section>
