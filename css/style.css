@@ -34,6 +34,8 @@
   --gray-5: #E5E5E5;
   --gray-6: #ABABAB;
   --gray-7: #F2F2F2;
+  --gray-8: #EBEBEB;
+  --gray-9: #E5E5E5;
   --brown-1: #766357;
   --brown-2: #604E43;
   --brown-3: #503E33;
@@ -410,6 +412,18 @@ a:active {
   background-color: var(--gray-7);
   padding: 6px 13px;
   height: 38px;
+  outline: none;
+}
+
+.search__popup-form__input:focus,
+.search__popup-form__input:focus:hover {
+  border: 2px solid var(--gray-7);
+  background-color: var(--white);
+  padding: 4px 11px;
+}
+
+.search__popup-form__input:hover {
+  background-color: var(--gray-8);
 }
 
 .search__popup-form__input::placeholder {
