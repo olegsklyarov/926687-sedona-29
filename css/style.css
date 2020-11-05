@@ -26,6 +26,7 @@
   --blue-1: #81B3D2;
   --blue-2: #669EC0;
   --blue-3: #5496BD;
+  --blue-4: #87B5D1;
   --gray-1: #B3B3B3;
   --gray-2: #EEEEEE;
   --gray-3: #333333;
@@ -42,14 +43,14 @@
   --link-active: var(--gray-1);
   --link-focus: var(--brown-1);
 
-  --sort-direction: #CACACA;
+  --sort-direction: var(--gray-4);
 
   --button-blue-color: var(--white);
-  --button-blue-color-active: var(--gray-1);
+  --button-blue-color-active: var(--blue-4);
   --button-blue-background-color: var(--blue-1);
   --button-blue-background-color-hover: var(--blue-2);
   --button-blue-background-color-active: var(--blue-3);
-  --button-blue-social-color-active: #87B5D1;
+  --button-blue-social-color-active: var(--blue-4);
 
   --button-brown-color: var(--white);
   --button-brown-color-active: var(--gray-1);
@@ -398,13 +399,17 @@ a:active {
   top: 86px;
   left: 0;
   background: var(--white);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .search__popup-form__input {
   border: none;
   background-color: var(--gray-7);
   padding: 6px 13px;
-  position: relative;
+  height: 38px;
 }
 
 .search__popup-form__input::placeholder {
@@ -415,19 +420,50 @@ a:active {
   text-transform: uppercase;
 }
 
-.search__popup-form__date:after {
-  content: "";
-  display: inline-block;
-  background-image: url("../img/calendar.svg");
-  width: 21px;
-  height: 23px;
-  position: absolute;
+.search__popup-form__input__date {
+  width: 346px;
 }
 
 .search__popup-form__label {
   color: var(--black);
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.search__popup-form__item {
+  position: relative;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search__popup-form__input-group {
+  display: flex;
+}
+
+.search__popup-form__input-group input {
+  width: 36px;
+}
+
+.search__popup-form__submit {
+  margin-top: 30px;
+  width: 458px;
+  height: 58px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.search__popup-form__calendar-icon:after {
+  content: "";
+  display: inline-block;
+  background-image: url("../img/calendar.svg");
+  width: 21px;
+  height: 23px;
+  position: absolute;
+  top: 7px;
+  right: 9px;
 }
 
 .search__button-block {
