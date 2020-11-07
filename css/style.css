@@ -676,6 +676,9 @@ a:active {
 
 .search-form__cost__price-controls {
   display: flex;
+  border: 2px solid var(--white);
+  border-radius: 2px;
+  width: 317px;
 }
 
 .search-form__cost__range-controls {
@@ -730,9 +733,18 @@ a:active {
   margin: 0;
 }
 
+.search-form__cost-max__label:before {
+  content: "";
+  border-left: 2px solid var(--white);
+}
+
 .search-form__cost-min,
 .search-form__cost-max {
+  outline: none;
   background: transparent;
+  border: none;
+  padding: 6px;
+  text-align: center;
 }
 
 .search-form__cost-min::placeholder,
