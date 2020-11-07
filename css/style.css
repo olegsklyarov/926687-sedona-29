@@ -485,12 +485,14 @@ a:active {
 }
 
 .search__popup-form__input-group__button:hover > .search__popup-form__input-group__sign-plus,
-.search__popup-form__input-group__button:hover > .search__popup-form__input-group__sign-minus {
+.search__popup-form__input-group__button:hover > .search__popup-form__input-group__sign-minus,
+.search__popup-form__input__calendar-icon:hover {
   fill: var(--black);
 }
 
 .search__popup-form__input-group__button:active > .search__popup-form__input-group__sign-plus,
-.search__popup-form__input-group__button:active > .search__popup-form__input-group__sign-minus {
+.search__popup-form__input-group__button:active > .search__popup-form__input-group__sign-minus,
+.search__popup-form__input__calendar-icon:active {
   fill: var(--blue-1);
 }
 
@@ -503,15 +505,13 @@ a:active {
   line-height: 26px;
 }
 
-.search__popup-form__calendar-icon:after {
-  content: "";
-  display: inline-block;
-  background-image: url("../img/calendar.svg");
+.search__popup-form__input__calendar-icon {
   width: 21px;
   height: 23px;
   position: absolute;
   top: 7px;
   right: 9px;
+  fill: var(--gray-10);
 }
 
 .search__button-block {
