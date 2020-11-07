@@ -38,4 +38,10 @@
   <symbol id="star" viewBox="0 0 19 17">
     <path d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 12.99 3.44 17l2.12-6.5L0 6.5h6.88L9 0z"/>
   </symbol>
+  <symbol id="sign-minus" viewBox="0 0 12 3">
+    <rect width="12" height="3"/>
+  </symbol>
+  <symbol id="sign-plus" viewBox="0 0 11 11">
+    <path clip-rule="evenodd" d="M4.23 6.77V11h2.54V6.77H11V4.23H6.77V0H4.23v4.23H0v2.54h4.23z"/>
+  </symbol>
 </svg>

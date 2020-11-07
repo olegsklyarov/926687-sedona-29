@@ -454,10 +454,31 @@ a:active {
 
 .search__popup-form__input-group {
   display: flex;
+  width: 114px;
 }
 
 .search__popup-form__input-group input {
-  width: 36px;
+  width: 38px;
+}
+
+.search__popup-form__input-group__sign-minus {
+  position: absolute;
+  top: 19px;
+  left: 14px;
+}
+
+.search__popup-form__input-group__sign-plus {
+  position: absolute;
+  top: 15px;
+  left: 14px;
+}
+
+.search__popup-form__input-group__button {
+  border: none;
+  outline: none;
+  width: 38px;
+  padding: 0;
+  position: relative;
 }
 
 .search__popup-form__submit {
