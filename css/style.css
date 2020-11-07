@@ -576,6 +576,16 @@ a:active {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 5px;
+  padding: 0;
+}
+
+.main-footer__website-by {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer__website-by__link {
+  margin-left: 10px;
 }
 
 .social__icon {
