@@ -798,6 +798,16 @@ a:active {
   margin: 0;
 }
 
+.search-result__header:hover {
+  color: var(--blue-1);
+  cursor: pointer;
+}
+
+.search-result__header:active {
+  color: var(--gray-1);
+  cursor: pointer;
+}
+
 .search-result__body {
   display: grid;
   grid-template-columns: 110px 140px;
