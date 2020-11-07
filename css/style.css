@@ -40,6 +40,7 @@
   --brown-1: #766357;
   --brown-2: #604E43;
   --brown-3: #503E33;
+  --brown-4: #847870;
 
   --link: var(--black);
   --link-hover: var(--blue-1);
@@ -56,7 +57,7 @@
   --button-blue-social-color-active: var(--blue-4);
 
   --button-brown-color: var(--white);
-  --button-brown-color-active: var(--gray-1);
+  --button-brown-color-active: var(--brown-4);
   --button-brown-background-color: var(--brown-1);
   --button-brown-background-color-hover: var(--brown-2);
   --button-brown-background-color-active: var(--brown-3);
