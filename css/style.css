@@ -36,6 +36,7 @@
   --gray-7: #F2F2F2;
   --gray-8: #EBEBEB;
   --gray-9: #E5E5E5;
+  --gray-10: #A9A9A9;
   --brown-1: #766357;
   --brown-2: #604E43;
   --brown-3: #503E33;
@@ -465,12 +466,14 @@ a:active {
   position: absolute;
   top: 19px;
   left: 14px;
+  fill: var(--gray-10);
 }
 
 .search__popup-form__input-group__sign-plus {
   position: absolute;
   top: 15px;
   left: 14px;
+  fill: var(--gray-10);
 }
 
 .search__popup-form__input-group__button {
@@ -479,6 +482,16 @@ a:active {
   width: 38px;
   padding: 0;
   position: relative;
+}
+
+.search__popup-form__input-group__button:hover > .search__popup-form__input-group__sign-plus,
+.search__popup-form__input-group__button:hover > .search__popup-form__input-group__sign-minus {
+  fill: var(--black);
+}
+
+.search__popup-form__input-group__button:active > .search__popup-form__input-group__sign-plus,
+.search__popup-form__input-group__button:active > .search__popup-form__input-group__sign-minus {
+  fill: var(--blue-1);
 }
 
 .search__popup-form__submit {
