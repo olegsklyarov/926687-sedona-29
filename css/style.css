@@ -282,7 +282,7 @@ a:active {
   grid-gap: 0;
 }
 
-.benefits__benefit-centered {
+.benefits__grid__item {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -291,43 +291,60 @@ a:active {
   height: 100%;
 }
 
-.benefits__grid__real-city {
-  grid-area: real-city;
+.benefits__grid__item__block-header {
+  font-size: 21px;
+  line-height: 21px;
+  max-width: 149px;
+  margin: 0;
 }
 
-.benefits__grid__real-city-picture {
+.benefits__grid__item__real-city {
+  grid-area: real-city;
+  padding-top: 47px;
+  padding-bottom: 54px;
+}
+
+.benefits__grid__item__real-city-picture {
   grid-area: real-city-picture;
 }
 
-.benefits__grid__housing {
+.benefits__grid__item__housing {
   grid-area: housing;
+  padding-top: 60px;
+  padding-bottom: 81px;
 }
 
-.benefits__grid__food {
+.benefits__grid__item__food {
   grid-area: food;
+  padding-top: 61px;
+  padding-bottom: 81px;
 }
 
-.benefits__grid__souvenir {
+.benefits__grid__item__souvenir {
   grid-area: souvenir;
+  padding-top: 55px;
+  padding-bottom: 81px;
 }
 
-.benefits__grid__devils-bridge-picture {
+.benefits__grid__item__devils-bridge-picture {
   grid-area: devils-bridge-picture;
 }
 
-.benefits__grid__devils-bridge {
+.benefits__grid__item__devils-bridge {
   grid-area: devils-bridge;
+  padding-top: 50px;
+  padding-bottom: 51px;
 }
 
-.benefits__grid__small-area {
+.benefits__grid__item__small-area {
   grid-area: small-area;
 }
 
-.benefits__grid__fun-travel {
+.benefits__grid__item__fun-travel {
   grid-area: fun-travel;
 }
 
-.benefits__grid__little-tourists {
+.benefits__grid__item__little-tourists {
   grid-area: little-tourists;
 }
 
@@ -355,74 +372,36 @@ a:active {
   color: var(--gray-3);
 }
 
-.benefits__benefit-block-header {
-  font-size: 21px;
-  line-height: 21px;
-  max-width: 149px;
-  margin: 0;
-}
-
-.benefits__benefit-block-text {
+.benefits__grid__item__block-text {
   max-width: 285px;
   color: var(--gray-3);
 }
 
-.benefits__benefit-block-blue {
+.benefits__grid__item__block-blue {
   background-color: var(--blue-1);
   color: var(--white);
 }
 
-.benefits__item__block-real-city {
-  padding-top: 47px;
-  padding-bottom: 54px;
-}
-
-.benefits__item__block-housing {
-  padding-top: 60px;
-  padding-bottom: 81px;
-}
-
-.benefits__item__block-food {
-  padding-top: 61px;
-  padding-bottom: 81px;
-}
-
-.benefits__item__block-souvenir {
-  padding-top: 55px;
-  padding-bottom: 81px;
-}
-
-.benefits__item__block-devils-bridge {
-  padding-top: 50px;
-  padding-bottom: 51px;
-}
-
-.benefits__item__block-small-area,
-.benefits__item__block-fun-travel,
-.benefits__item__block-little-tourists {
-  padding-top: 47px;
-  padding-bottom: 54px;
-}
-
-
-.benefits__benefit-block-blue-text {
+.benefits__grid__item__block-blue-text {
   max-width: 305px;
 }
 
-.benefits__benefit-block-gray {
+.benefits__grid__item__block-gray {
   background-color: var(--gray-2);
   color: var(--gray-3);
+  padding-top: 47px;
+  padding-bottom: 54px;
 }
 
-.benefits__benefit-block-gray-header {
+.benefits__grid__item__block-gray-header {
   color: var(--black);
 }
 
-.benefits__benefit-block-gray-text {
+.benefits__grid__item__block-gray-text {
   max-width: 258px;
 }
 
-.benefits__icon {
+.benefits__grid__item__block-icon {
   fill: var(--blue-1);
 }
 
