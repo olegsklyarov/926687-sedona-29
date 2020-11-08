@@ -118,39 +118,57 @@
           Седоне</p>
         <div class="search__button-and-popup-form">
           <button class="search__button button-common button-brown" type="button">Поиск гостиницы в Cедоне</button>
+
           <div class="search__popup-form">
-            <div class="search__popup-form__label-and-input">
-              <label class="search__popup-form__label">
-                Дата заезда:
-                <input class="search__popup-form__input search__popup-form__date" type="text" placeholder="24 апреля 2017">
-              </label>
-            </div>
-            <div class="search__popup-form__label-and-input">
-              <label class="search__popup-form__label">
-                Дата выезда:
-                <input class="search__popup-form__input search__popup-form__date" type="text" placeholder="4 июля 2017">
-              </label>
+            <div class="search__popup-form__item">
+              <label for="search__popup-form__input__date-arrival" class="search__popup-form__label">Дата заезда:</label>
+              <input id="search__popup-form__input__date-arrival" class="search__popup-form__input search__popup-form__input__date" type="text" placeholder="24 апреля 2017">
+              <svg class="search__popup-form__input__calendar-icon" width="21" height="23">
+                <use xlink:href="img/icons.svg#calendar"></use>
+              </svg>
             </div>
 
-            <div class="search__popup-form__label-and-input">
-              <label class="search__popup-form__label">
-                Взрослые:
-                <button>-</button>
-                <input class="search__popup-form__input" type="text" placeholder="2">
-                <button>+</button>
-              </label>
+            <div class="search__popup-form__item">
+              <label for="search__popup-form__input__date-departure" class="search__popup-form__label">Дата выезда:</label>
+              <input id="search__popup-form__input__date-departure" class="search__popup-form__input search__popup-form__input__date" type="text" placeholder="4 июля 2017">
+              <svg class="search__popup-form__input__calendar-icon" width="21" height="23">
+                <use xlink:href="img/icons.svg#calendar"></use>
+              </svg>
             </div>
 
-            <div class="search__popup-form__label-and-input">
-              <label class="search__popup-form__label">
-                Дети:
-                <button>-</button>
-                <input class="search__popup-form__input" type="text" placeholder="0">
-                <button>+</button>
-              </label>
+            <div class="search__popup-form__item">
+              <label for="search__popup-form__input__adults" class="search__popup-form__label">Взрослые:</label>
+              <div class="search__popup-form__input-group">
+                <button class="search__popup-form__input-group__button">
+                  <svg class="search__popup-form__input-group__sign-minus" width="12" height="3">
+                    <use xlink:href="img/icons.svg#sign-minus"></use>
+                  </svg>
+                </button>
+                <input id="search__popup-form__input__adults" class="search__popup-form__input" type="text" placeholder="2">
+                <button class="search__popup-form__input-group__button">
+                  <svg class="search__popup-form__input-group__sign-plus" width="11" height="11">
+                    <use xlink:href="img/icons.svg#sign-plus"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <label for="search__popup-form__input__children" class="search__popup-form__label">Дети:</label>
+              <div class="search__popup-form__input-group">
+                <button class="search__popup-form__input-group__button">
+                  <svg class="search__popup-form__input-group__sign-minus" width="12" height="3">
+                    <use xlink:href="img/icons.svg#sign-minus"></use>
+                  </svg>
+                </button>
+                <input id="search__popup-form__input__children" class="search__popup-form__input" type="text" placeholder="0">
+                <button class="search__popup-form__input-group__button">
+                  <svg class="search__popup-form__input-group__sign-plus" width="11" height="11">
+                    <use xlink:href="img/icons.svg#sign-plus"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
 
-            <button>Найти</button>
+            <button class="button-common button-blue search__popup-form__submit">Найти</button>
           </div>
         </div>
       </div>
@@ -186,9 +204,9 @@
         </a>
       </li>
     </ul>
-    <div>
+    <div class="main-footer__website-by">
       Website by
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="main-footer__website-by__link" href="https://htmlacademy.ru/intensive/htmlcss">
         <svg class="logo-academy" width="115" height="41">
           <use xlink:href="img/icons.svg#htmlacademy"></use>
         </svg>
