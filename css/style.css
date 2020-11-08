@@ -218,14 +218,16 @@ a:active {
 }
 
 .main-navigation__left-side {
+  margin-left: 1px;
   justify-self: start;
 }
 
 .main-navigation__left-side:first-child {
-  margin-left: 72px;
+  margin-left: 73px;
 }
 
 .main-navigation__right-side {
+  margin-right: -1px;
   justify-self: end;
 }
 
@@ -239,6 +241,7 @@ a:active {
 
 .brand {
   background-image: url("../img/brand-background.jpg");
+  background-position: 0 -1px;
   background-color: var(--brand-background-average);
   width: 1200px;
   height: 509px;
@@ -259,6 +262,10 @@ a:active {
   right: 0;
 }
 
+.brand__welcome-image {
+  margin-top: -3px;
+}
+
 
 
 /* Benefits */
@@ -275,16 +282,13 @@ a:active {
   grid-gap: 0;
 }
 
-.benefits__grid-centered {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .benefits__benefit-centered {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .benefits__grid__real-city {
@@ -331,8 +335,10 @@ a:active {
   display: flex;
   flex-direction: column;
   height: 215px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding-top: 42px;
+  padding-bottom: 51px;
 }
 
 .benefits__unappreciated {
@@ -346,28 +352,58 @@ a:active {
 .benefits__five-advantages {
   font-size: 14px;
   line-height: 26px;
-}
-
-.benefits__benefit-block {
-  text-align: center;
-  font-size: 14px;
-  line-height: 21px;
+  color: var(--gray-3);
 }
 
 .benefits__benefit-block-header {
   font-size: 21px;
   line-height: 21px;
   max-width: 149px;
+  margin: 0;
 }
 
 .benefits__benefit-block-text {
   max-width: 285px;
+  color: var(--gray-3);
 }
 
 .benefits__benefit-block-blue {
   background-color: var(--blue-1);
   color: var(--white);
 }
+
+.benefits__item__block-real-city {
+  padding-top: 47px;
+  padding-bottom: 54px;
+}
+
+.benefits__item__block-housing {
+  padding-top: 60px;
+  padding-bottom: 81px;
+}
+
+.benefits__item__block-food {
+  padding-top: 61px;
+  padding-bottom: 81px;
+}
+
+.benefits__item__block-souvenir {
+  padding-top: 55px;
+  padding-bottom: 81px;
+}
+
+.benefits__item__block-devils-bridge {
+  padding-top: 50px;
+  padding-bottom: 51px;
+}
+
+.benefits__item__block-small-area,
+.benefits__item__block-fun-travel,
+.benefits__item__block-little-tourists {
+  padding-top: 47px;
+  padding-bottom: 54px;
+}
+
 
 .benefits__benefit-block-blue-text {
   max-width: 305px;
