@@ -468,9 +468,23 @@ a:active {
   justify-content: space-between;
 }
 
+.search__popup-form__left-side,
+.search__popup-form__right-side {
+  display: flex;
+  align-items: center;
+}
+
 .search__popup-form__input-group {
   display: flex;
   width: 114px;
+}
+
+.search__popup-form__input-group-adults {
+  margin-left: 41px;
+}
+
+.search__popup-form__input-group-children {
+  margin-left: 26px;
 }
 
 .search__popup-form__input-group input {
