@@ -359,11 +359,12 @@ a:active {
 }
 
 .benefits__unappreciated {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
   max-width: 470px;
+  margin: 0;
 }
 
 .benefits__five-advantages {
