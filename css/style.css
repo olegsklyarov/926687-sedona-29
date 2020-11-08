@@ -548,6 +548,8 @@ a:active {
   max-width: 450px;
   font-size: 14px;
   line-height: 24px;
+  margin-top: -10px;
+  margin-bottom: 0;
 }
 
 .search__button {
