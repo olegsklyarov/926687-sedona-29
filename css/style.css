@@ -529,6 +529,17 @@ a:active {
   fill: var(--gray-10);
 }
 
+.search:after {
+  content: "";
+  background-image: url("../img/map.jpg");
+  background-position: 1px 0;
+  background-repeat: no-repeat;
+  background-color: var(--white);
+  width: 1200px;
+  height: 473px;
+  display: inline-block;
+}
+
 .search__button-block {
   height: 291px;
   display: flex;
