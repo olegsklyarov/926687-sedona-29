@@ -771,6 +771,7 @@ a:active {
   border: none;
   padding: 6px;
   text-align: center;
+  color: var(--white);
 }
 
 .search-form__cost-min::placeholder,
