@@ -421,6 +421,7 @@ a:active {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .search__popup-form__input {
@@ -526,7 +527,7 @@ a:active {
 }
 
 .search__popup-form__submit {
-  margin-top: 30px;
+  margin-top: 25px;
   width: 458px;
   height: 58px;
   font-weight: bold;
@@ -592,15 +593,32 @@ a:active {
 .main-footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 120px;
   justify-items: center;
   align-items: center;
+  width: 1090px;
+  margin: 0 auto;
 }
 
 .contacts {
+  height: 100%;
   font-weight: 700;
-  text-align: center;
   font-size: 21px;
   line-height: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 41px;
+}
+
+.contacts__hashtag {
+  margin: 0;
+}
+
+.contacts__phone {
+  margin: 0;
 }
 
 .social__button {
@@ -614,15 +632,17 @@ a:active {
 
 .social__items {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 5px;
+  grid-template-columns: repeat(3, 46px);
+  grid-column-gap: 6px;
   padding: 0;
   list-style: none;
+  margin-top: 2px;
 }
 
 .main-footer__website-by {
   display: flex;
   align-items: center;
+  margin-top: -10px;
 }
 
 .main-footer__website-by__link {
