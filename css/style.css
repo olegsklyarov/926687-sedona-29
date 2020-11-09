@@ -743,9 +743,9 @@ a:active {
 .search-form__cost {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  justify-content: space-between;
+  margin-top: 26px;
+  margin-bottom: 32px;
 }
 
 .search-form__infrastructure {
@@ -757,12 +757,15 @@ a:active {
   border: 2px solid var(--white);
   border-radius: 2px;
   width: 317px;
+  height: 36px;
+  margin-top: -13px;
 }
 
 .search-form__cost__range-controls {
   height: 21px;
   padding-top: 10px;
   position: relative;
+  margin-top: -15px;
 }
 
 .search-form__cost__range-controls .scale {
@@ -835,7 +838,7 @@ a:active {
 .search-form__cost-max {
   background: transparent;
   border: none;
-  padding: 6px;
+  padding: 6px 6px 6px 15px;
   text-align: center;
   color: var(--white);
 }
@@ -856,6 +859,7 @@ a:active {
   width: 137px;
   height: 36px;
   align-self: center;
+  margin-left: -10px;
 }
 
 .search-form__button-submit:hover {
