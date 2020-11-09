@@ -271,7 +271,7 @@ a:active {
     "devils-bridge-picture devils-bridge-picture devils-bridge"
     "small-area fun-travel little-tourists";
   grid-template-rows: 256px 330px 256px 256px;
-  grid-template-columns: repeat(3,400px);
+  grid-template-columns: repeat(3, 400px);
   grid-gap: 0;
 }
 
@@ -299,6 +299,7 @@ a:active {
 
 .benefits__grid__item__real-city-picture {
   grid-area: real-city-picture;
+  background-color: var(--blue-1);
 }
 
 .benefits__grid__item__housing {
