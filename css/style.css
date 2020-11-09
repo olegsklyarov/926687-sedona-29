@@ -1073,7 +1073,7 @@ a:active {
   justify-self: end;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   align-items: flex-end;
   padding-top: 15px;
   padding-bottom: 30px;
@@ -1091,6 +1091,7 @@ a:active {
 }
 
 .search-result__badge-rating {
+  margin-top: 27px;
   width: 110px;
   height: 27px;
   background: var(--gray-7);
