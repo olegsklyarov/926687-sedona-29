@@ -416,6 +416,20 @@ a:active {
   justify-content: space-between;
   align-content: space-between;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  animation-name: animation-down;
+  animation-duration: 0.6s;
+}
+
+@keyframes animation-down {
+  0% {
+    transform: translateY(-86px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .search__popup-form-hidden {
@@ -542,18 +556,6 @@ a:active {
   fill: var(--gray-10);
 }
 
-.search:after {
-  content: "";
-  background-image: url("../img/map.jpg");
-  background-position: 1px 0;
-  background-repeat: no-repeat;
-  background-color: var(--white);
-  width: 1200px;
-  height: 473px;
-  display: inline-block;
-  vertical-align: top;
-}
-
 .search__button-block {
   height: 291px;
   display: flex;
@@ -592,7 +594,7 @@ a:active {
 .main-footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 130px;
+  grid-template-rows: 120px;
   justify-items: center;
   align-items: center;
   width: 1090px;
@@ -608,8 +610,8 @@ a:active {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding-top: 25px;
-  padding-bottom: 45px;
+  padding-top: 19px;
+  padding-bottom: 40px;
 }
 
 .contacts__hashtag {
@@ -630,12 +632,14 @@ a:active {
 }
 
 .social__items {
-  display: grid;
-  grid-template-columns: repeat(3, 46px);
-  grid-column-gap: 6px;
+  display: flex;
   padding: 0;
   list-style: none;
-  margin-top: 2px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  column-gap: 6px;
+  padding-bottom: 10px;
 }
 
 .main-footer__website-by {
@@ -1029,7 +1033,7 @@ a:active {
 
 .search-result__item:last-child {
   border-bottom: 1px var(--gray-5) solid;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
 }
 
 .search-result__block-rating {
