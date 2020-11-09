@@ -131,16 +131,6 @@ a:active {
   overflow: hidden;
 }
 
-/* Grid */
-
-.page-body {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-}
-
-
-
 /* Common */
 
 .button-common {
@@ -363,7 +353,7 @@ a:active {
   justify-content: space-between;
   align-items: center;
   padding-top: 42px;
-  padding-bottom: 51px;
+  padding-bottom: 50px;
 }
 
 .benefits__unappreciated {
@@ -658,11 +648,14 @@ a:active {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  justify-content: start;
-  align-items: center;
   padding: 0;
-  margin-top: 30px;
-  gap: 6px
+  margin-top: 25px;
+  margin-left: -4px;
+}
+
+.social__items li {
+  margin-top: 6px;
+  margin-left: 6px;
 }
 
 .main-footer__website-by {
@@ -701,8 +694,10 @@ a:active {
 .search-form {
   background-color: var(--search-form-background-average);
   background-image: url("../img/search-form-background.jpg");
+  background-position: center center;
+  background-size: cover;
   width: 1200px;
-  height: 217px;
+  min-height: 217px;
   color: var(--white);
   font-size: 14px;
   line-height: 21px;
@@ -771,7 +766,7 @@ a:active {
 .search-form__cost {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   margin-top: 26px;
   margin-bottom: 32px;
 }
@@ -780,20 +775,24 @@ a:active {
   margin-right: 120px;
 }
 
+.search-form__checkbox {
+  margin-top: 23px;
+}
+
 .search-form__cost__price-controls {
   display: flex;
   border: 2px solid var(--white);
   border-radius: 2px;
   width: 317px;
   height: 36px;
-  margin-top: -13px;
+  margin-top: 11px;
 }
 
 .search-form__cost__range-controls {
   height: 21px;
   padding-top: 10px;
   position: relative;
-  margin-top: -15px;
+  margin-top: 10px;
 }
 
 .search-form__cost__range-controls .scale {
@@ -894,6 +893,7 @@ a:active {
   height: 36px;
   align-self: center;
   margin-left: -10px;
+  margin-top: 24px;
 }
 
 .search-form__button-submit:hover {
@@ -941,7 +941,7 @@ a:active {
 }
 
 .search-result__body {
-  margin-top: 6px;
+  margin-top: 7px;
   display: grid;
   grid-template-columns: 110px 142px;
   grid-template-rows: 26px 27px;
@@ -950,7 +950,8 @@ a:active {
 }
 
 .search-result__housing-name {
-  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -963,11 +964,12 @@ a:active {
 }
 
 .search-result__block-image {
-  align-self: center;
+  margin-top: 30px;
 }
 
 .search-result__block-details {
-  height: 100px;
+  min-height: 100px;
+  padding-bottom: 30px;
 }
 
 .search-result__sort {
@@ -1056,8 +1058,7 @@ a:active {
 .search-result__item {
   display: grid;
   grid-template-columns: 164px auto 200px;
-  height: 151px;
-  align-items: center;
+  min-height: 151px;
   padding-left: 73px;
   padding-right: 73px;
   border-top: 1px var(--gray-5) solid;
@@ -1070,12 +1071,10 @@ a:active {
 
 .search-result__block-rating {
   justify-self: end;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  height: 100%;
   padding-top: 15px;
   padding-bottom: 30px;
 }
