@@ -155,6 +155,7 @@ a:active {
 }
 
 .button-blue:hover {
+  color: var(--button-blue-color);
   background-color: var(--button-blue-background-color-hover);
 }
 
@@ -169,6 +170,7 @@ a:active {
 }
 
 .button-brown:hover {
+  color: var(--button-brown-color);
   background-color: var(--button-brown-background-color-hover);
 }
 
@@ -992,6 +994,10 @@ a:active {
 .search-result__button {
   font-size: 14px;
   line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .search-result__sort-order {
