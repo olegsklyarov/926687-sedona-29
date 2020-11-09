@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru" class="page">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <title>Гостиницы в Седоне</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
   <header>
@@ -90,7 +90,7 @@
         <h3 class="search-form__header">Стоимость в сутки (Р):</h3>
 
         <div class="search-form__cost__price-controls">
-          <label>
+          <label class="search-form__cost-min__label">
             <input class="search-form__cost-min" type="number" name="cost_min" min="0" placeholder="От 0">
           </label>
           <label class="search-form__cost-max__label">
@@ -114,7 +114,7 @@
       <div class="search-result__block-sorting">
         <div class="search-result__block-sorting__left-side">
           <h2 class="search-result__items-count">Найдено: 3</h2>
-          <p class="search-result__sorting-type-header">Сортировка:</p>
+          <h3 class="search-result__sorting-type-header">Сортировка:</h3>
           <ul class="search-result__sorting-types">
             <li>
               <button class="search-result__sorting-type-button search-result__sorting-type-button-selected" type="button">
@@ -150,7 +150,7 @@
       <div class="search-result__item">
         <img class="search-result__block-image" src="img/search-result-amara.jpg" width="135" height="90" alt="Вид на Amara Resort & Spa">
         <div class="search-result__block-details">
-          <h3 class="search-result__items-count">Amara Resort & Spa</h3>
+          <h3 class="search-result__housing-name">Amara Resort & Spa</h3>
           <div class="search-result__body">
             <p class="search-result__housing-type">Гостиница</p>
             <p class="search-result__housing-price">От 4000 Р.</p>
@@ -187,8 +187,8 @@
 
       <div class="search-result__item">
         <img class="search-result__block-image" src="img/search-result-desert.jpg" width="135" height="90" alt="Вид на Desert Quail Inn">
-        <div>
-          <h3 class="search-result__items-count">Desert Quail Inn</h3>
+        <div class="search-result__block-details">
+          <h3 class="search-result__housing-name">Desert Quail Inn</h3>
           <div class="search-result__body">
             <p class="search-result__housing-type">Мотель</p>
             <p class="search-result__housing-price">От 3000 Р.</p>
@@ -220,8 +220,8 @@
 
       <div class="search-result__item">
         <img class="search-result__block-image" src="img/search-result-villas.jpg" width="135" height="90" alt="Вид на Villas at Poco Diablo">
-        <div>
-          <h3 class="search-result__items-count">Villas at Poco Diablo</h3>
+        <div class="search-result__block-details">
+          <h3 class="search-result__housing-name">Villas at Poco Diablo</h3>
           <div class="search-result__body">
             <p class="search-result__housing-type">Апартаменты</p>
             <p class="search-result__housing-price">От 2000 Р.</p>
