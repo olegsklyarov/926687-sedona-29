@@ -341,7 +341,7 @@ a:active {
 .benefits__grid__item__devils-bridge {
   grid-area: devils-bridge;
   padding-top: 50px;
-  padding-bottom: 51px;
+  padding-bottom: 32px;
 }
 
 .benefits__grid__item__small-area {
@@ -379,6 +379,8 @@ a:active {
   font-size: 14px;
   line-height: 26px;
   color: var(--gray-3);
+  margin-top: 45px;
+  max-width: 600px;
 }
 
 .benefits__grid__item__block-text {
