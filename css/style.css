@@ -1030,16 +1030,25 @@ a:active {
 
 .search-result__block-rating {
   justify-self: end;
+
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-end;
-  align-self: center;
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 30px;
 }
 
 .search-result__stars {
   padding: 0;
+  margin-right: -2px;
   list-style: none;
   display: flex;
+}
+
+.search-result__stars li {
+  margin-left: 5px;
 }
 
 .search-result__badge-rating {
@@ -1050,4 +1059,5 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 4px;
 }
