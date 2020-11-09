@@ -151,7 +151,6 @@ a:active {
 .button-common {
   text-transform: uppercase;
   border: none;
-  outline: none;
   background-color: var(--white);
 }
 
@@ -429,7 +428,6 @@ a:active {
   background-color: var(--gray-7);
   padding: 6px 13px;
   height: 38px;
-  outline: none;
 }
 
 .search__popup-form__input:focus,
@@ -508,10 +506,11 @@ a:active {
 
 .search__popup-form__input-group__button {
   border: none;
-  outline: none;
   width: 38px;
   padding: 0;
   position: relative;
+  background-color: var(--gray-7);
+  cursor: pointer;
 }
 
 .search__popup-form__input-group__button:hover > .search__popup-form__input-group__sign-plus,
@@ -704,8 +703,16 @@ a:active {
   margin-right: 16px;
 }
 
+.search-form__checkbox__input:focus + .search-form__checkbox__label:before {
+  opacity: 0.5;
+}
+
 .search-form__checkbox__input:checked + .search-form__checkbox__label:before {
   display: none;
+}
+
+.search-form__checkbox__input:checked:focus + .search-form__checkbox__label .search-form__checkbox-on {
+  opacity: 0.5;
 }
 
 .search-form__checkbox__input:checked + .search-form__checkbox__label .search-form__checkbox-on {
@@ -782,7 +789,6 @@ a:active {
   top: 1px;
   left: 0;
   cursor: pointer;
-  outline: none;
 }
 
 .search-form__cost__range-controls .toggle:hover {
@@ -804,14 +810,29 @@ a:active {
   margin: 0;
 }
 
+.search-form__cost-min__label {
+  width: 50%;
+}
+
+.search-form__cost-max__label {
+  width: 50%;
+  position: relative;
+}
+
 .search-form__cost-max__label:before {
   content: "";
-  border-left: 2px solid var(--white);
+  display: inline-block;
+  width: 2px;
+  height: 22px;
+  background-color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
 .search-form__cost-min,
 .search-form__cost-max {
-  outline: none;
   background: transparent;
   border: none;
   padding: 6px;
@@ -826,7 +847,6 @@ a:active {
 }
 
 .search-form__button-submit {
-  outline: none;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
@@ -926,17 +946,15 @@ a:active {
   color: var(--gray-1);
 }
 
-.search-result__sorting-type-button:hover {
+.search-result__sorting-type-button:hover,
+.search-result__sorting-type-button:focus  {
   color: var(--blue-1);
+  cursor: pointer;
 }
 
 .search-result__sorting-type-button:active {
   border-bottom: 1px dotted var(--white);
   color: var(--black);
-}
-
-.search-result__sorting-type-button:focus {
-  outline: none;
 }
 
 .search-result__sorting-type-button-selected {
