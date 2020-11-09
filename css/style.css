@@ -845,9 +845,14 @@ a:active {
 .search-form__cost-max {
   background: transparent;
   border: none;
-  padding: 6px 6px 6px 15px;
   text-align: center;
   color: var(--white);
+  height: 100%;
+  width: 100%;
+}
+
+.search-form__cost-max {
+  margin-left: 4px;
 }
 
 .search-form__cost-min::placeholder,
