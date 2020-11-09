@@ -633,13 +633,12 @@ a:active {
 
 .social__items {
   display: flex;
-  padding: 0;
   list-style: none;
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  column-gap: 6px;
-  padding-bottom: 10px;
+  padding: 0 0 10px 0;
+  width: 150px;
 }
 
 .main-footer__website-by {
