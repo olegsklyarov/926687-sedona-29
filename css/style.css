@@ -873,7 +873,7 @@ a:active {
 }
 
 .search-form__cost-max {
-  margin-left: 4px;
+  padding-left: 7px;
 }
 
 .search-form__cost-min::placeholder,
