@@ -359,7 +359,7 @@ a:active {
 .benefits__intro {
   display: flex;
   flex-direction: column;
-  height: 215px;
+  min-height: 215px;
   justify-content: space-between;
   align-items: center;
   padding-top: 42px;
