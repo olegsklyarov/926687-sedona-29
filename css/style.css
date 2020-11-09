@@ -270,7 +270,7 @@ a:active {
     "housing food souvenir"
     "devils-bridge-picture devils-bridge-picture devils-bridge"
     "small-area fun-travel little-tourists";
-  grid-template-rows: 256px 330px 256px 256px;
+  grid-template-rows: minmax(256px, auto) minmax(330px, auto) minmax(256px, auto) minmax(256px, auto);
   grid-template-columns: repeat(3, 400px);
   grid-gap: 0;
 }
@@ -280,7 +280,7 @@ a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   height: 100%;
 }
 
@@ -289,6 +289,18 @@ a:active {
   line-height: 21px;
   max-width: 149px;
   margin: 0;
+}
+
+.benefits__grid__block-header__housing,
+.benefits__grid__block-header__food,
+.benefits__grid__block-header__souvenir {
+  margin-top: 28px;
+}
+
+.benefits__grid__item__block-header-number {
+  margin-top: 25px;
+  margin-bottom: 0;
+  font-weight: 300;
 }
 
 .benefits__grid__item__real-city {
@@ -300,6 +312,7 @@ a:active {
 .benefits__grid__item__real-city-picture {
   grid-area: real-city-picture;
   background-color: var(--blue-1);
+  height: 256px;
 }
 
 .benefits__grid__item__housing {
@@ -322,6 +335,7 @@ a:active {
 
 .benefits__grid__item__devils-bridge-picture {
   grid-area: devils-bridge-picture;
+  height: 256px;
 }
 
 .benefits__grid__item__devils-bridge {
@@ -368,6 +382,7 @@ a:active {
 }
 
 .benefits__grid__item__block-text {
+  margin-top: 25px;
   max-width: 285px;
   color: var(--gray-3);
 }
@@ -378,6 +393,7 @@ a:active {
 }
 
 .benefits__grid__item__block-blue-text {
+  margin-top: 23px;
   max-width: 305px;
 }
 
@@ -393,6 +409,7 @@ a:active {
 }
 
 .benefits__grid__item__block-gray-text {
+  margin-top: 25px;
   max-width: 258px;
 }
 
@@ -403,6 +420,7 @@ a:active {
 /* Search */
 
 .search__button-and-popup-form {
+  margin-top: 46px;
   position: relative;
 }
 
@@ -560,11 +578,11 @@ a:active {
 }
 
 .search__button-block {
-  height: 291px;
+  min-height: 291px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   padding-top: 60px;
 }
 
@@ -578,7 +596,7 @@ a:active {
   max-width: 450px;
   font-size: 14px;
   line-height: 24px;
-  margin-top: -10px;
+  margin-top: 30px;
   margin-bottom: 0;
 }
 
