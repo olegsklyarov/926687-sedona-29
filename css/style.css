@@ -877,8 +877,8 @@ a:active {
   justify-content: space-between;
   align-items: center;
   padding-left: 73px;
-  padding-right: 73px;
-  height: 90px;
+  padding-right: 67px;
+  height: 86px;
 }
 
 .search-result__block-sorting__left-side {
@@ -930,6 +930,10 @@ a:active {
 
 .search-result__sorting-type-header {
   margin-left: 47px;
+  margin-top: 4px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .search-result__sorting-types {
@@ -989,6 +993,7 @@ a:active {
 
 .search-result__sort-order-items {
   display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
