@@ -418,6 +418,10 @@ a:active {
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
+.search__popup-form-hidden {
+  display: none;
+}
+
 .search__popup-form__input {
   border: none;
   background-color: var(--gray-7);
