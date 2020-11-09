@@ -907,10 +907,19 @@ a:active {
 }
 
 .search-result__body {
+  margin-top: 6px;
   display: grid;
-  grid-template-columns: 110px 140px;
-  grid-template-rows: 30px 30px;
-  grid-gap: 10px;
+  grid-template-columns: 110px 142px;
+  grid-template-rows: 26px 27px;
+  grid-column-gap: 6px;
+  grid-row-gap: 10px;
+}
+
+.search-result__housing-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .search-result__housing-type,
@@ -921,6 +930,10 @@ a:active {
 
 .search-result__block-image {
   align-self: center;
+}
+
+.search-result__block-details {
+  height: 100px;
 }
 
 .search-result__sort {
@@ -1003,8 +1016,8 @@ a:active {
 
 .search-result__item {
   display: grid;
-  grid-template-columns: 162px auto 200px;
-  height: 150px;
+  grid-template-columns: 164px auto 200px;
+  height: 151px;
   align-items: center;
   padding-left: 73px;
   padding-right: 73px;
