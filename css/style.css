@@ -1,25 +1,25 @@
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: local('PT Sans'), local('PTSans-Regular'),
-  url('../fonts/ptsans.woff2') format('woff2'),
-  url('../fonts/ptsans.woff') format('woff');
+  src: local("PT Sans"), local("PTSans-Regular"),
+  url("../fonts/ptsans.woff2") format("woff2"),
+  url("../fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'),
-  url('../fonts/ptsansbold.woff2') format('woff2'),
-  url('../fonts/ptsansbold.woff') format('wodff');
+  src: local("PT Sans Bold"), local("PTSans-Bold"),
+  url("../fonts/ptsansbold.woff2") format("woff2"),
+  url("../fonts/ptsansbold.woff") format("wodff");
 }
 
 
 
 :root {
-  --main-font: 'PT Sans', Arial, sans-serif;
+  --main-font: "PT Sans", Arial, sans-serif;
   --white: #FFFFFF;
   --black: #000000;
   --red: #FF0000;
@@ -131,16 +131,6 @@ a:active {
   overflow: hidden;
 }
 
-/* Grid */
-
-.page-body {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-}
-
-
-
 /* Common */
 
 .button-common {
@@ -155,6 +145,7 @@ a:active {
 }
 
 .button-blue:hover {
+  color: var(--button-blue-color);
   background-color: var(--button-blue-background-color-hover);
 }
 
@@ -169,6 +160,7 @@ a:active {
 }
 
 .button-brown:hover {
+  color: var(--button-brown-color);
   background-color: var(--button-brown-background-color-hover);
 }
 
@@ -268,8 +260,8 @@ a:active {
     "housing food souvenir"
     "devils-bridge-picture devils-bridge-picture devils-bridge"
     "small-area fun-travel little-tourists";
-  grid-template-rows: 256px 330px 256px 256px;
-  grid-template-columns: repeat(3,400px);
+  grid-template-rows: minmax(256px, auto) minmax(330px, auto) minmax(256px, auto) minmax(256px, auto);
+  grid-template-columns: repeat(3, 400px);
   grid-gap: 0;
 }
 
@@ -278,7 +270,7 @@ a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   height: 100%;
 }
 
@@ -289,6 +281,18 @@ a:active {
   margin: 0;
 }
 
+.benefits__grid__block-header__housing,
+.benefits__grid__block-header__food,
+.benefits__grid__block-header__souvenir {
+  margin-top: 28px;
+}
+
+.benefits__grid__item__block-header-number {
+  margin-top: 25px;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
 .benefits__grid__item__real-city {
   grid-area: real-city;
   padding-top: 47px;
@@ -297,6 +301,8 @@ a:active {
 
 .benefits__grid__item__real-city-picture {
   grid-area: real-city-picture;
+  background-color: var(--blue-1);
+  height: 256px;
 }
 
 .benefits__grid__item__housing {
@@ -319,12 +325,13 @@ a:active {
 
 .benefits__grid__item__devils-bridge-picture {
   grid-area: devils-bridge-picture;
+  height: 256px;
 }
 
 .benefits__grid__item__devils-bridge {
   grid-area: devils-bridge;
   padding-top: 50px;
-  padding-bottom: 51px;
+  padding-bottom: 32px;
 }
 
 .benefits__grid__item__small-area {
@@ -342,11 +349,11 @@ a:active {
 .benefits__intro {
   display: flex;
   flex-direction: column;
-  height: 215px;
+  min-height: 215px;
   justify-content: space-between;
   align-items: center;
   padding-top: 42px;
-  padding-bottom: 51px;
+  padding-bottom: 50px;
 }
 
 .benefits__unappreciated {
@@ -362,9 +369,12 @@ a:active {
   font-size: 14px;
   line-height: 26px;
   color: var(--gray-3);
+  margin-top: 45px;
+  max-width: 600px;
 }
 
 .benefits__grid__item__block-text {
+  margin-top: 25px;
   max-width: 285px;
   color: var(--gray-3);
 }
@@ -375,6 +385,7 @@ a:active {
 }
 
 .benefits__grid__item__block-blue-text {
+  margin-top: 23px;
   max-width: 305px;
 }
 
@@ -390,6 +401,7 @@ a:active {
 }
 
 .benefits__grid__item__block-gray-text {
+  margin-top: 25px;
   max-width: 258px;
 }
 
@@ -400,6 +412,7 @@ a:active {
 /* Search */
 
 .search__button-and-popup-form {
+  margin-top: 46px;
   position: relative;
 }
 
@@ -557,11 +570,11 @@ a:active {
 }
 
 .search__button-block {
-  height: 291px;
+  min-height: 291px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   padding-top: 60px;
 }
 
@@ -575,7 +588,7 @@ a:active {
   max-width: 450px;
   font-size: 14px;
   line-height: 24px;
-  margin-top: -10px;
+  margin-top: 30px;
   margin-bottom: 0;
 }
 
@@ -594,9 +607,9 @@ a:active {
 .main-footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 120px;
+  grid-template-rows: minmax(120px, auto);
   justify-items: center;
-  align-items: center;
+  align-items: start;
   width: 1090px;
   margin: 0 auto;
 }
@@ -609,17 +622,17 @@ a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 19px;
-  padding-bottom: 40px;
+  justify-content: start;
 }
 
 .contacts__hashtag {
-  margin: 0;
+  margin-top: 19px;
+  margin-bottom: 0;
 }
 
 .contacts__phone {
-  margin: 0;
+  margin-top: 9px;
+  margin-bottom: 0;
 }
 
 .social__button {
@@ -633,18 +646,22 @@ a:active {
 
 .social__items {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  padding: 0 0 10px 0;
-  width: 150px;
+  padding: 0;
+  margin-top: 25px;
+  margin-left: -4px;
+}
+
+.social__items li {
+  margin-top: 6px;
+  margin-left: 6px;
 }
 
 .main-footer__website-by {
+  margin-top: 32px;
   display: flex;
   align-items: center;
-  margin-top: -10px;
 }
 
 .main-footer__website-by__link {
@@ -677,8 +694,10 @@ a:active {
 .search-form {
   background-color: var(--search-form-background-average);
   background-image: url("../img/search-form-background.jpg");
+  background-position: center center;
+  background-size: cover;
   width: 1200px;
-  height: 217px;
+  min-height: 217px;
   color: var(--white);
   font-size: 14px;
   line-height: 21px;
@@ -747,7 +766,7 @@ a:active {
 .search-form__cost {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   margin-top: 26px;
   margin-bottom: 32px;
 }
@@ -756,20 +775,24 @@ a:active {
   margin-right: 120px;
 }
 
+.search-form__checkbox {
+  margin-top: 23px;
+}
+
 .search-form__cost__price-controls {
   display: flex;
   border: 2px solid var(--white);
   border-radius: 2px;
   width: 317px;
   height: 36px;
-  margin-top: -13px;
+  margin-top: 11px;
 }
 
 .search-form__cost__range-controls {
   height: 21px;
   padding-top: 10px;
   position: relative;
-  margin-top: -15px;
+  margin-top: 10px;
 }
 
 .search-form__cost__range-controls .scale {
@@ -843,9 +866,14 @@ a:active {
 .search-form__cost-max {
   background: transparent;
   border: none;
-  padding: 6px 6px 6px 15px;
   text-align: center;
   color: var(--white);
+  height: 100%;
+  width: 100%;
+}
+
+.search-form__cost-max {
+  margin-left: 4px;
 }
 
 .search-form__cost-min::placeholder,
@@ -865,6 +893,7 @@ a:active {
   height: 36px;
   align-self: center;
   margin-left: -10px;
+  margin-top: 24px;
 }
 
 .search-form__button-submit:hover {
@@ -912,7 +941,7 @@ a:active {
 }
 
 .search-result__body {
-  margin-top: 6px;
+  margin-top: 7px;
   display: grid;
   grid-template-columns: 110px 142px;
   grid-template-rows: 26px 27px;
@@ -921,7 +950,8 @@ a:active {
 }
 
 .search-result__housing-name {
-  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -934,11 +964,12 @@ a:active {
 }
 
 .search-result__block-image {
-  align-self: center;
+  margin-top: 30px;
 }
 
 .search-result__block-details {
-  height: 100px;
+  min-height: 100px;
+  padding-bottom: 30px;
 }
 
 .search-result__sort {
@@ -992,6 +1023,10 @@ a:active {
 .search-result__button {
   font-size: 14px;
   line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .search-result__sort-order {
@@ -1023,8 +1058,7 @@ a:active {
 .search-result__item {
   display: grid;
   grid-template-columns: 164px auto 200px;
-  height: 151px;
-  align-items: center;
+  min-height: 151px;
   padding-left: 73px;
   padding-right: 73px;
   border-top: 1px var(--gray-5) solid;
@@ -1037,12 +1071,10 @@ a:active {
 
 .search-result__block-rating {
   justify-self: end;
-
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   align-items: flex-end;
-  height: 100%;
   padding-top: 15px;
   padding-bottom: 30px;
 }
@@ -1059,6 +1091,7 @@ a:active {
 }
 
 .search-result__badge-rating {
+  margin-top: 27px;
   width: 110px;
   height: 27px;
   background: var(--gray-7);
