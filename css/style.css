@@ -192,6 +192,9 @@ a:active {
   align-items: center;
 }
 
+.main-navigation__current {
+  color: var(--brown-1);
+}
 
 .main-navigation__logo {
   position: absolute;
